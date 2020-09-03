@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5634758995156352661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5634758995156352662}
+  - component: {fileID: 5634758995156352663}
+  m_Layer: 0
+  m_Name: IslandRenderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5634758995156352662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5634758995156352661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5634758995156352663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5634758995156352661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101787eded992b0469c2bbd5a8cb5162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: b59b8bd4a28800343b6d990b7555a73b, type: 2}
+  - {fileID: 11400000, guid: 668be3aa6371d554697219d29848d5cc, type: 2}
+  - {fileID: 11400000, guid: fcd6933647129ca49a79bdd1b7cd86f5, type: 2}
+  - {fileID: 11400000, guid: c4d456460ccf06d4eb3ae2a9728f8e38, type: 2}
+  - {fileID: 11400000, guid: 771b886c569f3c443837627f91f50e7b, type: 2}
+  - {fileID: 11400000, guid: 57ee7f64f3947d045ad76501cc449335, type: 2}
+  - {fileID: 11400000, guid: 84f3d96a7ceca754f9dd4ed69dc31c6a, type: 2}
+  - {fileID: 11400000, guid: 728d0b77c5646db47bf197b8692c13d7, type: 2}
+  - {fileID: 11400000, guid: 790c273f133d6d348b92ec6b4b6ecc5f, type: 2}
+  - {fileID: 11400000, guid: 674754937f8b83e47927c4ad25fead07, type: 2}
+  - {fileID: 11400000, guid: f9614178a0e321f4fad5bd9bddc5c6c9, type: 2}
+  - {fileID: 11400000, guid: 51a2a784a1ff58144bf9df3d6ea00b5e, type: 2}
+  tilemaps:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - props
+    - island
+    - water
+    _keys:
+    - props
+    - island
+    - water
+    _values:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}

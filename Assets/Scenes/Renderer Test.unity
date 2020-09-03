@@ -297,13 +297,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228156588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.906075, y: 2.7534397, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.093925, y: -0.24656034, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 281628131}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 665177625}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281628130
 GameObject:
@@ -671,8 +671,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 817085896}
+  - {fileID: 228156590}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &665177626
 MonoBehaviour:
@@ -919,98 +920,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1292135961
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1292135962}
-  - component: {fileID: 1292135963}
-  m_Layer: 0
-  m_Name: Island-0-0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1292135962
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292135961}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1292135963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292135961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 101787eded992b0469c2bbd5a8cb5162, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiles:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: b59b8bd4a28800343b6d990b7555a73b, type: 2}
-  - {fileID: 11400000, guid: 668be3aa6371d554697219d29848d5cc, type: 2}
-  - {fileID: 11400000, guid: fcd6933647129ca49a79bdd1b7cd86f5, type: 2}
-  - {fileID: 11400000, guid: c4d456460ccf06d4eb3ae2a9728f8e38, type: 2}
-  - {fileID: 11400000, guid: 771b886c569f3c443837627f91f50e7b, type: 2}
-  - {fileID: 11400000, guid: 57ee7f64f3947d045ad76501cc449335, type: 2}
-  - {fileID: 11400000, guid: 84f3d96a7ceca754f9dd4ed69dc31c6a, type: 2}
-  - {fileID: 11400000, guid: 728d0b77c5646db47bf197b8692c13d7, type: 2}
-  - {fileID: 11400000, guid: 790c273f133d6d348b92ec6b4b6ecc5f, type: 2}
-  - {fileID: 11400000, guid: 674754937f8b83e47927c4ad25fead07, type: 2}
-  - {fileID: 11400000, guid: f9614178a0e321f4fad5bd9bddc5c6c9, type: 2}
-  - {fileID: 11400000, guid: 51a2a784a1ff58144bf9df3d6ea00b5e, type: 2}
-  tilemaps:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 0
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 0
-    _keyValues:
-    - props
-    - island
-    - water
-    _keys:
-    - props
-    - island
-    - water
-    _values:
-    - {fileID: 7197596}
-    - {fileID: 2042877051}
-    - {fileID: 499165602}
 --- !u!1 &2042877048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2120243482}
   - component: {fileID: 2120243481}
+  - component: {fileID: 2120243483}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -1244,3 +1154,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120243483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120243480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797ecf40af14cc442b37b1ec7a68b439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: b59b8bd4a28800343b6d990b7555a73b, type: 2}
+  - {fileID: 11400000, guid: 668be3aa6371d554697219d29848d5cc, type: 2}
+  - {fileID: 11400000, guid: fcd6933647129ca49a79bdd1b7cd86f5, type: 2}
+  - {fileID: 11400000, guid: c4d456460ccf06d4eb3ae2a9728f8e38, type: 2}
+  - {fileID: 11400000, guid: 771b886c569f3c443837627f91f50e7b, type: 2}
+  - {fileID: 11400000, guid: 57ee7f64f3947d045ad76501cc449335, type: 2}
+  - {fileID: 11400000, guid: 84f3d96a7ceca754f9dd4ed69dc31c6a, type: 2}
+  - {fileID: 11400000, guid: 728d0b77c5646db47bf197b8692c13d7, type: 2}
+  - {fileID: 11400000, guid: 790c273f133d6d348b92ec6b4b6ecc5f, type: 2}
+  - {fileID: 11400000, guid: 674754937f8b83e47927c4ad25fead07, type: 2}
+  - {fileID: 11400000, guid: f9614178a0e321f4fad5bd9bddc5c6c9, type: 2}
+  - {fileID: 11400000, guid: 51a2a784a1ff58144bf9df3d6ea00b5e, type: 2}
+  tilemaps:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - props
+    - island
+    - water
+    _keys:
+    - props
+    - island
+    - water
+    _values:
+    - {fileID: 7197596}
+    - {fileID: 2042877051}
+    - {fileID: 499165602}
+  islandRendererPrefab: {fileID: 5634758995156352661, guid: 17fa9bb985010c9489f51931539b767b,
+    type: 3}

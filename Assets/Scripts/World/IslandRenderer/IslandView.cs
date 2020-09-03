@@ -9,15 +9,15 @@ namespace Swindler.World.IslandRenderer
 		/// <summary>
 		/// Island top left corner
 		/// </summary>
-		public Vector2 TLCorner { get; set;  }
+		public Vector2Int TLCorner { get; set;  }
 		/// <summary>
 		/// Island bottom right corner
 		/// </summary>
-		public Vector2 BRCorner { get; set; }
+		public Vector2Int BRCorner { get; set; }
 		/// <summary>
 		/// Island center
 		/// </summary>
-		public Vector2 Center { get; set; }
+		public Vector2Int Center { get; set; }
 		/// <summary>
 		/// Width of this island
 		/// </summary>

@@ -17,7 +17,6 @@ public class PlayerMovementInput : MonoBehaviour
 	private void Update()
 	{
 		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-		movement.Log("Movement velocity"); 
 		moveVelocity.SetVelocity(movement);
 	}
 
