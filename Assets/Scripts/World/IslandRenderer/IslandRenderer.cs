@@ -13,9 +13,6 @@ namespace Swindler.World.IslandRenderer
 		public TileBase[] tiles;
 		public SerializableStringTilemap tilemaps;
 
-		//private Vector2 playerPosition = Vector2.zero;
-		//private Vector2 lastPosition = Vector2.zero;
-
 		void Start()
 		{
 			DrawIsland(0, 0);
@@ -42,21 +39,7 @@ namespace Swindler.World.IslandRenderer
 		//	DrawWater();
 		//}
 
-		private void DrawWater()
-		{
-
-			//int minX = Mathf.RoundToInt(playerPosition.x - WATER_AROUND_PLAYER);
-			//int minY = Mathf.RoundToInt(playerPosition.y - WATER_AROUND_PLAYER);
-			//int maxX = Mathf.RoundToInt(playerPosition.x + WATER_AROUND_PLAYER);
-			//int maxY = Mathf.RoundToInt(playerPosition.y + WATER_AROUND_PLAYER);
-
-			//Tilemap waterMap = tilemaps["water"];
-
-			//for (int x = minX; x < maxX; x++)
-			//	for (int y = minY; y < maxY; y++)
-			//		waterMap.SetTile(new Vector3Int(x, y, 0), waterTile);
-
-		}
+		
 
 	}
 }
