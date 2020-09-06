@@ -3,29 +3,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-public class MoveVelocity : MonoBehaviour
+namespace Swindler.Player.Authoritative.Movement
 {
-
-	[SerializeField] private float moveSpeed;
-	private Rigidbody2D rb;
-	private Vector3 velocity;
-
-	public void SetVelocity(Vector3 velocity)
+	[RequireComponent(typeof(Rigidbody2D))]
+	public class MoveVelocity : MonoBehaviour
 	{
-		this.velocity = velocity;
+
+		[SerializeField] private float moveSpeed;
+		private Rigidbody2D rb;
+		private Vector3 velocity;
+		private Vector3 lastPostion = Vector3.zero;
+		public bool isOnGround;
+
+		public void SetVelocity(Vector3 velocity)
+		{
+			this.velocity = velocity;
+		}
+
+		public void SetIsOnGround(bool isOnGround)
+		{
+			this.isOnGround = isOnGround;
+		}
+
+		private void Update()
+		{
+			if (isOnGround)
+				lastPostion = transform.position;
+			else
+				transform.position = lastPostion;
+		}
+
+		private void FixedUpdate()
+		{
+			int canMove = (isOnGround ? 1 : 0);
+			rb.velocity = velocity * moveSpeed * canMove;
+			rb.angularVelocity *= canMove;
+
+			//TODO: Play animation here
+		}
+
+		private void Awake()
+		{
+			rb = GetComponent<Rigidbody2D>();
+		}
+
 	}
-
-	private void FixedUpdate()
-	{
-		rb.velocity = velocity * moveSpeed;
-
-		//TODO: Play animation here
-	}
-
-	private void Awake()
-	{
-		rb = GetComponent<Rigidbody2D>();
-	}
-
 }

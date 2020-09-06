@@ -12,6 +12,7 @@ namespace Swindler.World.IslandRenderer
 
 		[Header("Tilemaps and tiles")]
 		public TileBase[] tiles;
+		public TileBase square;
 		public SerializableStringTilemap tilemaps;
 
 		private int x;
@@ -20,7 +21,7 @@ namespace Swindler.World.IslandRenderer
 		private int height;
 		private string[] layers;
 
-		public void SetRenderData(TileBase[] tiles, SerializableStringTilemap tilemaps)
+		public void SetRenderData(TileBase[] tiles, SerializableStringTilemap tilemaps, TileBase square)
 		{
 			this.tiles = tiles;
 			this.tilemaps = tilemaps;
@@ -37,13 +38,14 @@ namespace Swindler.World.IslandRenderer
 			layers = island.Layers.Select(layer => layer.Name).ToArray();
 
 			DrawIsland(island, x, y);
+			//GenerateColliders(island, x, y);
 			//TODO: Create colliders
 		}
 
 		private void DrawIsland(IslandView island, int islandX, int islandY)
 		{
 			if (tiles == null || tilemaps == null)
-				throw new Exception("Tilemaps or tiles not assigned, use SetRenderData before calling SetIsland"); 
+				throw new Exception("Tilemaps or tiles not assigned, use SetRenderData before calling SetIsland");
 
 			foreach (IslandLayerView layer in island.Layers)
 			{
@@ -53,6 +55,40 @@ namespace Swindler.World.IslandRenderer
 						map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), tiles[layer.Data[y * island.Width + x]]);
 			}
 
+		}
+
+		private void GenerateColliders(IslandView island, int islandX, int islandY)
+		{
+
+			var layer = island.Layers.Find(l => l.Name == "island");
+			Tilemap map = tilemaps["props"];
+			for (int x = 0; x < island.Width; x++)
+				for (int y = 0; y < island.Height; y++)
+					if (IsShoreTile(x, y, island.Width, layer.Data))
+					{
+						map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), square);
+					}
+
+		}
+
+		private bool IsShoreTile(int mapX, int mapY, int width, int[] data)
+		{
+			//Check only water tile
+			if (data[mapY * width + mapX] != 0)
+				return false;
+
+			for (int x = mapX - 1; x < mapX + 1; x++)
+				for (int y = mapY - 1; x < mapY + 1; y++)
+				{
+					int index = y * width + x;
+					if (index < 0 || index >= data.Length)
+						continue;
+
+					if (data[index] > 0)
+						return true;
+				}
+
+			return false;
 		}
 
 		private void OnDestroy()
