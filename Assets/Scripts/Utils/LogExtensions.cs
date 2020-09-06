@@ -24,10 +24,10 @@ namespace Swindler.Utils
 
 		private static void Print(object value, string name)
 		{
-
 			if(string.IsNullOrEmpty(name))
 			{
-				Debug.Log(PREFIX + name);
+				Debug.Log(PREFIX + value);
+				return;
 			}
 
 			Debug.Log($"{PREFIX}{name} :>> {value}");

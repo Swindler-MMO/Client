@@ -48,7 +48,6 @@ namespace Swindler.World.IslandRenderer
 			foreach (IslandLayerView layer in island.Layers)
 			{
 				Tilemap map = tilemaps[layer.Name];
-				layer.Name.Log();
 				for (int x = 0; x < island.Width; x++)
 					for (int y = 0; y < island.Height; y++)
 						map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), tiles[layer.Data[y * island.Width + x]]);
@@ -58,20 +57,25 @@ namespace Swindler.World.IslandRenderer
 
 		private void OnDestroy()
 		{
-			//int maxX = x + width;
-			//int maxY = y + height;
-			//for (int i = x; i < maxX; i++)
-			//	for (int j = y; j < maxY; j++)
-			//		map.Set
-			//TODO: Clear tiles
-			//TODO: Clear colliders
+
+			//If island is not loaded, return
+			if (layers == null || layers.Length == 0)
+				return;
+
 			foreach (string layer in layers)
 			{
 				Tilemap map = tilemaps[layer];
+
+				//If Unity remove Tilemap before this object, continue
+				if (map == null)
+					continue;
+
 				for (int i = 0; i < width; i++)
 					for (int j = 0; j < height; j++)
 						map.SetTile(new Vector3Int(x + i, y + j, 0), null);
 			}
+
+			//TODO: Clear colliders
 		}
 
 
