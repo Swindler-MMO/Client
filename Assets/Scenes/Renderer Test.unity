@@ -1356,7 +1356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228156588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.093925, y: -0.24656034, z: -10}
+  m_LocalPosition: {x: -0.09375, y: -0.24658203, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 281628131}
@@ -1643,7 +1643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637186145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.906075, y: 2.7534397, z: -10}
+  m_LocalPosition: {x: 4999.9062, y: 4999.7534, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1691,12 +1691,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665177625}
-  - component: {fileID: 665177624}
   - component: {fileID: 665177628}
   - component: {fileID: 665177627}
   - component: {fileID: 665177626}
   - component: {fileID: 665177629}
   - component: {fileID: 665177630}
+  - component: {fileID: 665177631}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1704,20 +1704,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &665177624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665177623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad49232fa01bdc64ba652da46111135c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterMap: {fileID: 499165602}
-  waterTile: {fileID: 11400000, guid: 3c01daeb63c680641bfbd23ac2cb69da, type: 2}
 --- !u!4 &665177625
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,7 +1712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665177623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 3, z: 0}
+  m_LocalPosition: {x: 5000, y: 5000, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 817085896}
@@ -1759,6 +1745,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  velocity: {x: 0, y: 0, z: 0}
+  lastPosition: {x: 0, y: 0, z: 0}
+  canMove: 0
 --- !u!50 &665177628
 Rigidbody2D:
   serializedVersion: 4
@@ -1818,6 +1807,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a5f74b845340aa449d237fdf52c100d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  island: {fileID: 2042877051}
+--- !u!114 &665177631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665177623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e19729d181447d8829dd8869750291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 2120243484}
+  worldManager: {fileID: 2120243483}
 --- !u!1 &817085895
 GameObject:
   m_ObjectHideFlags: 0
@@ -18024,6 +18028,7 @@ GameObject:
   - component: {fileID: 2120243482}
   - component: {fileID: 2120243481}
   - component: {fileID: 2120243483}
+  - component: {fileID: 2120243484}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -18122,3 +18127,17 @@ MonoBehaviour:
     - {fileID: 2042877051}
     - {fileID: 499165602}
   square: {fileID: 11400000, guid: 6d1ec6c9c49aac54e92bd503d5860b39, type: 2}
+--- !u!114 &2120243484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120243480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad49232fa01bdc64ba652da46111135c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterMap: {fileID: 499165602}
+  waterTile: {fileID: 11400000, guid: 3c01daeb63c680641bfbd23ac2cb69da, type: 2}

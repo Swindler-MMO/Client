@@ -1,5 +1,6 @@
 ﻿using Swindler.Utils;
 using System;
+using System.Diagnostics;
 using System.Linq;
 using UnityEditor.PackageManager;
 using UnityEngine;
@@ -7,7 +8,7 @@ using UnityEngine.Tilemaps;
 
 namespace Swindler.World.IslandRenderer
 {
-	class IslandRenderer : MonoBehaviour
+	public class IslandRenderer : MonoBehaviour
 	{
 
 		[Header("Tilemaps and tiles")]
@@ -30,14 +31,15 @@ namespace Swindler.World.IslandRenderer
 		public async void SetIsland(int x, int y)
 		{
 			var island = await IslandAPI.LoadIsland(x, y);
-
+			
 			this.x = x;
 			this.y = y;
 			width = island.Width;
 			height = island.Height;
 			layers = island.Layers.Select(layer => layer.Name).ToArray();
-
+			
 			DrawIsland(island, x, y);
+			
 			//GenerateColliders(island, x, y);
 			//TODO: Create colliders
 		}
@@ -94,6 +96,8 @@ namespace Swindler.World.IslandRenderer
 		private void OnDestroy()
 		{
 
+			("Destroying island " + gameObject.name).Log();
+			
 			//If island is not loaded, return
 			if (layers == null || layers.Length == 0)
 				return;

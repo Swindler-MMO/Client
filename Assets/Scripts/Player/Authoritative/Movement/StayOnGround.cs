@@ -9,11 +9,12 @@ using UnityEngine.Tilemaps;
 namespace Swindler.Player.Authoritative.Movement
 {
 	[RequireComponent(typeof(MoveVelocity))]
-	class StayOnGround : MonoBehaviour
+	public class StayOnGround : MonoBehaviour
 	{
 
 		public Tilemap island;
-		MoveVelocity moveVelocity;
+		
+		private MoveVelocity moveVelocity;
 
 		private void Start()
 		{
@@ -24,7 +25,7 @@ namespace Swindler.Player.Authoritative.Movement
 		{
 
 			var tile = island.GetTile(island.WorldToCell(transform.position));
-			moveVelocity.SetIsOnGround(tile != null);
+			moveVelocity.SetCanMove(tile != null);
 
 		}
 

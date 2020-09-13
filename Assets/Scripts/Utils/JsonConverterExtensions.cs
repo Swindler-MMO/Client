@@ -41,7 +41,7 @@ namespace Swindler.Json.Utils
 
 			currentSettings.Converters.Add(new JsonVector2Converter());
 			currentSettings.Converters.Add(new IslandLayerConverter());
-			//currentSettings.Converters.Add(new JsonVector4Converter());
+			currentSettings.Converters.Add(new JsonVector2IntConverter());
 			//currentSettings.Converters.Add(new JsonQuaternionConverter());
 
 			JsonConvert.DefaultSettings = () => currentSettings;
@@ -104,4 +104,24 @@ namespace Swindler.Json.Utils
 		}
 	}
 
+	public class JsonVector2IntConverter : JsonConverter<Vector2Int>
+	{
+		public override void WriteJson(JsonWriter writer, Vector2Int value, JsonSerializer serializer)
+		{
+			JObject j = new JObject { { "x", value.x }, { "y", value.y } };
+
+			j.WriteTo(writer);
+		}
+
+		//CanRead is false which means the default implementation will be used instead.
+		public override Vector2Int ReadJson(JsonReader reader, Type objectType, Vector2Int existingValue, bool hasExistingValue, JsonSerializer serializer)
+		{
+			return existingValue;
+		}
+
+		public override bool CanWrite => true;
+
+		public override bool CanRead => false;
+	}
+	
 }

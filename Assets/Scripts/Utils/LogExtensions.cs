@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Swindler.World;
+using UnityEngine;
 
 namespace Swindler.Utils
 {
@@ -11,13 +12,37 @@ namespace Swindler.Utils
 		{
 			Print(value, name);
 		}
+		
+		public static void Log(this int value, string name = null)
+		{
+			Print(value, name);
+		}
 
 		public static void Log(this Vector2 value, string name = null)
 		{
 			Print(value, name);
 		}
+		public static void Log(this Vector2Int value, string name = null)
+		{
+			Print(value, name);
+		}
 
 		public static void Log(this Vector3 value, string name = null)
+		{
+			Print(value, name);
+		}
+		
+		public static void Log(this Point value, string name = null)
+		{
+			Print($"({value.X};{value.Y})", name);
+		}
+		
+		public static void Log(this float value, string name = null)
+		{
+			Print(value, name);
+		}
+		
+		public static void Log(this bool value, string name = null)
 		{
 			Print(value, name);
 		}
