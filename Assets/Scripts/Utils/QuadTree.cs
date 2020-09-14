@@ -89,9 +89,10 @@ namespace Swindler.Utils
 
 		public List<T> RetrieveObjectsInArea(Rect area)
 		{
+			List<T> returnedObjects = new List<T>();
+			
 			if (rectOverlap(m_bounds, area))
 			{
-				List<T> returnedObjects = new List<T>();
 				for (int i = 0; i < m_storedObjects.Count; i++)
 				{
 					if (area.Contains(m_storedObjects[i].GetPosition()))
@@ -111,11 +112,9 @@ namespace Swindler.Utils
 						}
 					}
 				}
-
-				return returnedObjects;
 			}
 
-			return null;
+			return returnedObjects;
 		}
 
 		// Clear quadtree

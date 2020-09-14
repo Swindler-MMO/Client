@@ -16,7 +16,7 @@ namespace Swindler.World
 
 		public Tilemap waterMap;
 		public TileBase waterTile;
-		
+
 		public void DrawWater(Vector2 currentPosition)
 		{
 			"Drawing Water".Log();
@@ -28,6 +28,11 @@ namespace Swindler.World
 			int maxX = Mathf.RoundToInt(currentPosition.x + CHUNKS_AROUND_PLAYER * WorldManager.CHUNK_SIZE);
 			int maxY = Mathf.RoundToInt(currentPosition.y + CHUNKS_AROUND_PLAYER * WorldManager.CHUNK_SIZE);
 
+			(maxX - minX).Log("X size");
+			(maxY - minY).Log("Y size");
+			((maxX - minX) * (maxY - minY)).Log("Tilemap size");
+			
+			//TODO: Optimise this part using BoxFill / SetTiles
 			for (int x = minX; x < maxX; x++)
 				for (int y = minY; y < maxY; y++)
 					waterMap.SetTile(new Vector3Int(x, y, 0), waterTile);

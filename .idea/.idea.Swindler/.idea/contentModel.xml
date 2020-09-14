@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\julie\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\julie\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Swindler.230074192.00" t="ExcludeRecursive" />
+    <e p="C:\Users\julie\Dev\Unity\Swindler" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Json.NET" t="Include">
+            <e p="Newtonsoft.Json.xml" t="Include" />
+          </e>
+          <e p="Rotary Heart" t="Include">
+            <e p="SerializableDictionaryLite" t="Include">
+              <e p="DrawKeyAsPropertyAttribute.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="Constants.cs" t="Include" />
+                <e p="Definer.cs" t="Include" />
+                <e p="DictionaryPropertyDrawer.cs" t="Include" />
+                <e p="PreferencesWindow.cs" t="Include" />
+                <e p="SupportWindow.cs" t="Include" />
+              </e>
+              <e p="IDAttribute.cs" t="Include" />
+              <e p="References" t="Include">
+                <e p="RequiredReferences.cs" t="Include" />
+              </e>
+              <e p="ReorderableList" t="Include">
+                <e p="ReorderableList.cs" t="Include" />
+              </e>
+              <e p="SerializableDictionaryBase.cs" t="Include" />
+            </e>
+            <e p="Shared" t="Include">
+              <e p="Editor" t="Include">
+                <e p="BaseSupportWindow.cs" t="Include" />
+                <e p="Definer.cs" t="Include" />
+                <e p="RotaryHeart.Editor.asmdef" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Player" t="Include">
+            <e p="Authoritative" t="Include">
+              <e p="Movement" t="Include">
+                <e p="MoveVelocity.cs" t="Include" />
+                <e p="PlayerMovementInput.cs" t="Include" />
+                <e p="StayOnGround.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Utils" t="Include">
+            <e p="HttpUtils.cs" t="Include" />
+            <e p="JsonConverterExtensions.cs" t="Include" />
+            <e p="LogExtensions.cs" t="Include" />
+            <e p="PoissonDiscSampling.cs" t="Include" />
+            <e p="PoissonDisplay.cs" t="Include" />
+            <e p="QuadTree.cs" t="Include" />
+            <e p="SerializableStringTilemap.cs" t="Include" />
+            <e p="Utils.cs" t="Include" />
+            <e p="WeightedRandomBag.cs" t="Include" />
+          </e>
+          <e p="World" t="Include">
+            <e p="IslandAPI.cs" t="Include" />
+            <e p="IslandRenderer" t="Include">
+              <e p="IslandRenderer.cs" t="Include" />
+              <e p="IslandView.cs" t="Include" />
+            </e>
+            <e p="Point.cs" t="Include" />
+            <e p="WaterRenderer.cs" t="Include" />
+            <e p="WorldManager.cs" t="Include" />
+            <e p="WorldUpdater.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="RotaryHeart.csproj" t="IncludeRecursive" />
+      <e p="Swindler.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

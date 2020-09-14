@@ -48,13 +48,22 @@ namespace Swindler.World.IslandRenderer
 		{
 			if (tiles == null || tilemaps == null)
 				throw new Exception("Tilemaps or tiles not assigned, use SetRenderData before calling SetIsland");
-
+			
+			TileBase[] tilesArray = new TileBase[width * height];
+			Vector3Int[] positions = new Vector3Int[width * height];
+			
 			foreach (IslandLayerView layer in island.Layers)
 			{
 				Tilemap map = tilemaps[layer.Name];
-				for (int x = 0; x < island.Width; x++)
-					for (int y = 0; y < island.Height; y++)
-						map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), tiles[layer.Data[y * island.Width + x]]);
+
+				for (int x = 0; x < width; x++)
+					for (int y = 0; y < height; y++)
+					{
+						int index = x * width + y;
+						positions[index] = new Vector3Int(islandX + x, islandY + y, 0);
+						tilesArray[index] = tiles[layer.Data[y * island.Width + x]];
+					}
+				map.SetTiles(positions, tilesArray);
 			}
 
 		}
