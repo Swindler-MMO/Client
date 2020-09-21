@@ -20,9 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LiteNetLib-0.9.3.2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LiteNetLib-0.9.3.2/LiteNetLib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LiteNetLib-0.9.3.2/LiteNetLib.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LiteNetLib-0.9.3.2/LiteNetLib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/LiteNetLib-0.9.3.2/LiteNetLib.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameEventListenner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameEventListenner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Renderer Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Renderer Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/QuadTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/QuadTree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +45,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/PoissonDiscSampling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/0f/69c624f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -46,13 +58,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/PoissonDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/JsonConverterExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/Point.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/LogExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/QuadTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameEventListenner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs" />
       </list>
     </option>
   </component>
@@ -107,6 +121,8 @@
       <workItem from="1599903349251" duration="2140000" />
       <workItem from="1599942140132" duration="7634000" />
       <workItem from="1600019582679" duration="6360000" />
+      <workItem from="1600067567965" duration="3084000" />
+      <workItem from="1600715924482" duration="2565000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
@@ -115,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600030087299</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Improved rendering">
+      <created>1600070117499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600070117499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -136,7 +159,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Waaayyyyyy to many changes, but it works !" />
-    <option name="LAST_COMMIT_MESSAGE" value="Waaayyyyyy to many changes, but it works !" />
+    <MESSAGE value="Improved rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved rendering" />
   </component>
   <component name="WindowStateProjectService">
     <state x="616" y="597" width="945" height="395" key="#C#" timestamp="1599896943020">
@@ -207,10 +231,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2483" height="488" key="GridCell.Tab.3.right/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1600018500941" />
+    <state x="572" y="236" key="Rider.ProjectTemplateDialog.Size" timestamp="1600720015768">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="572" y="236" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1600720015768" />
+    <state x="589" y="188" key="RiderGenerateDialog" timestamp="1600721727214">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="589" y="188" key="RiderGenerateDialog/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1600721727214" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1599897221361">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1599897221361" />
+    <state width="871" height="709" key="SwitcherDM" timestamp="1600721519680">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="871" height="709" key="SwitcherDM/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1600721519680" />
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1599637250803">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

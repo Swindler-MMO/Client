@@ -9,7 +9,7 @@ namespace Swindler.World
 	public static class IslandAPI
 	{
 
-		private const string HOST = "http://localhost:3000";
+		private const string HOST = "http://swindler.thebad.xyz";
 
 		public static Task<IslandView> LoadIsland(int x, int y)
 		{

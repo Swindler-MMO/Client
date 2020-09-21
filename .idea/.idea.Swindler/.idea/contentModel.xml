@@ -12,6 +12,9 @@
           <e p="Json.NET" t="Include">
             <e p="Newtonsoft.Json.xml" t="Include" />
           </e>
+          <e p="LiteNetLib-0.9.3.2" t="Include">
+            <e p="LiteNetLib.xml" t="Include" />
+          </e>
           <e p="Rotary Heart" t="Include">
             <e p="SerializableDictionaryLite" t="Include">
               <e p="DrawKeyAsPropertyAttribute.cs" t="Include" />
@@ -41,6 +44,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Multiplayer" t="Include">
+            <e p="GameEventListenner.cs" t="Include" />
+            <e p="NetworkManager.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="Authoritative" t="Include">
               <e p="Movement" t="Include">
