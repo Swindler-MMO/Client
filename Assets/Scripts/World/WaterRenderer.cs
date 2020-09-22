@@ -19,7 +19,7 @@ namespace Swindler.World
 
 		public void DrawWater(Vector2 currentPosition)
 		{
-			"Drawing Water".Log();
+			//"Drawing Water".Log();
 
 			waterMap.ClearAllTiles();
 
@@ -28,9 +28,9 @@ namespace Swindler.World
 			int maxX = Mathf.RoundToInt(currentPosition.x + CHUNKS_AROUND_PLAYER * WorldManager.CHUNK_SIZE);
 			int maxY = Mathf.RoundToInt(currentPosition.y + CHUNKS_AROUND_PLAYER * WorldManager.CHUNK_SIZE);
 
-			(maxX - minX).Log("X size");
-			(maxY - minY).Log("Y size");
-			((maxX - minX) * (maxY - minY)).Log("Tilemap size");
+			// (maxX - minX).Log("X size");
+			// (maxY - minY).Log("Y size");
+			// ((maxX - minX) * (maxY - minY)).Log("Tilemap size");
 			
 			//TODO: Optimise this part using BoxFill / SetTiles
 			for (int x = minX; x < maxX; x++)

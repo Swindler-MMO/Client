@@ -44,9 +44,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Game" t="Include">
+            <e p="GameManager.cs" t="Include" />
+          </e>
           <e p="Multiplayer" t="Include">
             <e p="GameEventListenner.cs" t="Include" />
-            <e p="NetworkManager.cs" t="Include" />
+            <e p="GameServer.cs" t="Include" />
+            <e p="Packets" t="Include">
+              <e p="PlayerAuthPacket.cs" t="Include" />
+              <e p="SwindlerPacket.cs" t="Include" />
+            </e>
           </e>
           <e p="Player" t="Include">
             <e p="Authoritative" t="Include">

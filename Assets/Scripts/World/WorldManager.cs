@@ -42,7 +42,7 @@ namespace  Swindler.World
 
 		public void UpdateWorld(Vector2 position)
 		{
-			"Updating world".Log();
+			//"Updating world".Log();
 
 			if(!isListLoaded)
 				return;

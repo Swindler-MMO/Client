@@ -105,7 +105,7 @@ namespace Swindler.World.IslandRenderer
 		private void OnDestroy()
 		{
 
-			("Destroying island " + gameObject.name).Log();
+			//$"Destroying island {gameObject.name}".Log();
 			
 			//If island is not loaded, return
 			if (layers == null || layers.Length == 0)
