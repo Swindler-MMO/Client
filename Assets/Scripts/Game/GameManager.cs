@@ -11,6 +11,9 @@ namespace Swindler.Game
 	public class GameManager : MonoBehaviour
 	{
 
+		public static GameManager Instance { get; private set; }
+		public static GameServer Server { get; private set; }
+		
 		[Header("Prefabs")]
 		public GameObject authoritativePlayer;
 		public GameObject remotePlayer;
@@ -19,17 +22,16 @@ namespace Swindler.Game
 		public Tilemap island;
 		public WorldManager worldManager;
 		public WaterRenderer waterRenderer;
-		
-		private GameServer gameServer;
-		
+
 		private void Awake()
 		{
-			gameServer = CreateGameServer();
+			Server = CreateGameServer();
+			Instance = this;
 		}
 
 		private void Start()
 		{
-			gameServer.Connect();
+			Server.Connect();
 		}
 
 		public void OnConnectedToGameServer()
@@ -52,6 +54,7 @@ namespace Swindler.Game
 
 		private void SpawnAuthoritativePlayer(float x, float y)
 		{
+			//TODO: Maybe use static method in a component ? 
 			GameObject p = Instantiate(authoritativePlayer);
 
 			WorldUpdater wu = p.GetComponent<WorldUpdater>();

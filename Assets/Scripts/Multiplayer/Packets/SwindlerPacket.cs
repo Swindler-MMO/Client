@@ -4,7 +4,6 @@ namespace Multiplayer.Packets
 {
 	public abstract class SwindlerPacket
 	{
-
 		private readonly NetDataWriter w;
 		
 		protected SwindlerPacket()

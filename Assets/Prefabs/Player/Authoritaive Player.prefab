@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 9194946024192039299}
   - component: {fileID: 9194946024192039296}
   - component: {fileID: 9194946024192039297}
+  - component: {fileID: 2070187268084067983}
   m_Layer: 0
   m_Name: Authoritaive Player
   m_TagString: Untagged
@@ -292,6 +293,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterRenderer: {fileID: 0}
   worldManager: {fileID: 0}
+--- !u!114 &2070187268084067983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9194946024192039305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2616e0d6bd9040d3b1f1174e9d25a4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9194946024442767961
 GameObject:
   m_ObjectHideFlags: 0

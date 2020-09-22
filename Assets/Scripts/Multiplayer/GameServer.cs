@@ -29,6 +29,7 @@ namespace Swindler.Multiplayer
     
         public void Connect()
         {
+            new PlayerPositionPacket(Vector3.one).Serialize();
             manager.Connect(serverHost, serverPort, new PlayerAuthPacket("Aayyi").Serialize());
         }
     

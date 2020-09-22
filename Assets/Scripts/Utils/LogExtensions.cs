@@ -42,6 +42,11 @@ namespace Swindler.Utils
 			Print(value, name);
 		}
 		
+		public static void Log(this long value, string name = null)
+		{
+			Print(value, name);
+		}
+		
 		public static void Log(this bool value, string name = null)
 		{
 			Print(value, name);
