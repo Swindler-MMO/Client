@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Swindler.World.IslandRenderer
+namespace Swindler.World.Renderers
 {
-	public class IslandView
+	// ReSharper disable once ClassNeverInstantiated.Global
+	public class Island
 	{
 
 		/// <summary>
@@ -27,17 +28,17 @@ namespace Swindler.World.IslandRenderer
 		/// </summary>
 		public int Height { get; set; }
 
-		public List<IslandLayerView> Layers { get; set; }
+		public List<IslandLayer> Layers { get; set; }
 
 	}
 
-	public class IslandLayerView
+	public class IslandLayer
 	{
 
 		public string Name { get; }
 		public int[] Data { get; }
 
-		public IslandLayerView(string name, int[] data)
+		public IslandLayer(string name, int[] data)
 		{
 			Name = name;
 			Data = data;

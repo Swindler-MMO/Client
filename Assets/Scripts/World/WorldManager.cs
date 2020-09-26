@@ -17,6 +17,8 @@ namespace  Swindler.World
 		public TileBase[] tiles;
 		public SerializableStringTilemap tilemaps;
 		public TileBase square;
+		public TileBase treeTile;
+		public TileBase rockTile;
 
 		private QuadTree<IslandPosition> islands;
 		private Dictionary<Vector2, GameObject> loadedIslands;
@@ -86,11 +88,11 @@ namespace  Swindler.World
 		private void CreateIslandRenderer(int x, int y)
 		{
 			GameObject go = new GameObject($"Island-{x}-{y}");
-			var islandRenderer = go.AddComponent<IslandRenderer.IslandRenderer>();
+			var islandRenderer = go.AddComponent<Renderers.IslandRenderer>();
 			
 			loadedIslands.Add(new Vector2Int(x, y), go);
 			
-			islandRenderer.SetRenderData(tiles, tilemaps, square);
+			islandRenderer.SetRenderData(tiles, tilemaps, square, treeTile, rockTile);
 			islandRenderer.SetIsland(x, y);
 		}
 

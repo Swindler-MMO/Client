@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Swindler.World.IslandRenderer;
+using Swindler.World.Renderers;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -74,20 +74,20 @@ namespace Swindler.Json.Utils
 	{
 		public override bool CanConvert(Type objectType)
 		{
-			return objectType == typeof(List<IslandLayerView>);
+			return objectType == typeof(List<IslandLayer>);
 		}
 
 		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
 		{
 			Debug.Log("Reading");
 			JObject jo = JObject.Load(reader);
-			List<IslandLayerView> items = new List<IslandLayerView>();
+			List<IslandLayer> items = new List<IslandLayer>();
 
 			//Debug.Log("Reading");
 
 			foreach (JProperty prop in jo.Properties())
 			{
-				IslandLayerView item = prop.Value.ToObject<IslandLayerView>();
+				IslandLayer item = prop.Value.ToObject<IslandLayer>();
 				items.Add(item);
 			}
 			return items;

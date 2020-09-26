@@ -78,13 +78,14 @@
             <e p="WeightedRandomBag.cs" t="Include" />
           </e>
           <e p="World" t="Include">
-            <e p="IslandAPI.cs" t="Include" />
-            <e p="IslandRenderer" t="Include">
-              <e p="IslandRenderer.cs" t="Include" />
-              <e p="IslandView.cs" t="Include" />
+            <e p="API" t="Include">
+              <e p="Island.cs" t="Include" />
+              <e p="IslandAPI.cs" t="Include" />
             </e>
-            <e p="Point.cs" t="Include" />
-            <e p="WaterRenderer.cs" t="Include" />
+            <e p="Renderers" t="Include">
+              <e p="IslandRenderer.cs" t="Include" />
+              <e p="WaterRenderer.cs" t="Include" />
+            </e>
             <e p="WorldManager.cs" t="Include" />
             <e p="WorldUpdater.cs" t="Include" />
           </e>

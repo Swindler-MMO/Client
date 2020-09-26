@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Swindler.Utils;
 using System.Threading.Tasks;
-using Swindler.World.IslandRenderer;
+using Swindler.World.Renderers;
 using UnityEngine;
 
 namespace Swindler.World
@@ -11,9 +11,9 @@ namespace Swindler.World
 
 		private const string HOST = "http://swindler.thebad.xyz";
 
-		public static Task<IslandView> LoadIsland(int x, int y)
+		public static Task<Island> LoadIsland(int x, int y)
 		{
-			return HttpUtils.Get<IslandView>(HOST + $"/islands/{x}/{y}");
+			return HttpUtils.Get<Island>(HOST + $"/islands/{x}/{y}");
 		}
 
 		public static Task<List<Vector2Int>> ListIslands()

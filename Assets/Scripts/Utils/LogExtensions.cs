@@ -31,12 +31,7 @@ namespace Swindler.Utils
 		{
 			Print(value, name);
 		}
-		
-		public static void Log(this Point value, string name = null)
-		{
-			Print($"({value.X};{value.Y})", name);
-		}
-		
+
 		public static void Log(this float value, string name = null)
 		{
 			Print(value, name);

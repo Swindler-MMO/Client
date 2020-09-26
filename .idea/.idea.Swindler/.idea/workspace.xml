@@ -20,17 +20,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerPositionPacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerPositionPacket.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Island2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Island2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Ocean.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Ocean.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Rock.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Rock.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Shore.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Shore.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/tileset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/tileset.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/API.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Renderer Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Renderer Test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/SwindlerPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/SwindlerPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/LogExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/LogExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/JsonConverterExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/JsonConverterExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/API/IslandAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/API/IslandAPI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/IslandRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/IslandRenderer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/WaterRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/WaterRenderer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spritesheets/island.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spritesheets/island.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Square Sprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Square Sprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +64,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/PoissonDiscSampling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/ae/4a054f66/GridLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/c6/582ec6f1/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/a4/8674902f/TileBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/0f/69c624f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -59,18 +84,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/QuadTree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandAPI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameEventListenner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerAuthPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/LogExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/SwindlerPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerPositionPacket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/API/IslandView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs" />
       </list>
     </option>
   </component>
@@ -127,7 +154,8 @@
       <workItem from="1600019582679" duration="6360000" />
       <workItem from="1600067567965" duration="3084000" />
       <workItem from="1600715924482" duration="2565000" />
-      <workItem from="1600783607151" duration="12326000" />
+      <workItem from="1600783607151" duration="13334000" />
+      <workItem from="1601107778060" duration="5136000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>

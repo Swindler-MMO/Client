@@ -1514,7 +1514,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 32
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1540,7 +1540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637186145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09278911, y: -0.2465604, z: -10}
+  m_LocalPosition: {x: -0.07191813, y: -0.19424677, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17755,7 +17755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiles:
   - {fileID: 0}
-  - {fileID: 11400000, guid: b59b8bd4a28800343b6d990b7555a73b, type: 2}
+  - {fileID: 11400000, guid: db19ef49e45b87e40b5074167f1016c1, type: 2}
   - {fileID: 11400000, guid: 668be3aa6371d554697219d29848d5cc, type: 2}
   - {fileID: 11400000, guid: fcd6933647129ca49a79bdd1b7cd86f5, type: 2}
   - {fileID: 11400000, guid: c4d456460ccf06d4eb3ae2a9728f8e38, type: 2}
@@ -17803,6 +17803,8 @@ MonoBehaviour:
     - {fileID: 2042877051}
     - {fileID: 499165602}
   square: {fileID: 11400000, guid: 6d1ec6c9c49aac54e92bd503d5860b39, type: 2}
+  treeTile: {fileID: 11400000, guid: 90673abfcdfad9e4088772ad405b59ac, type: 2}
+  rockTile: {fileID: 11400000, guid: 51f83b691cc560949a3c81db362b125a, type: 2}
 --- !u!114 &2120243484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17816,4 +17818,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterMap: {fileID: 499165602}
-  waterTile: {fileID: 11400000, guid: 3c01daeb63c680641bfbd23ac2cb69da, type: 2}
+  waterTile: {fileID: 11400000, guid: 2428dca6ff54ca2409b789181decbc8f, type: 2}

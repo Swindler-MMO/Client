@@ -3,6 +3,7 @@ using Swindler.Multiplayer;
 using Swindler.Player.Authoritative.Movement;
 using Swindler.Utils;
 using Swindler.World;
+using Swindler.World.Renderers;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -39,7 +40,7 @@ namespace Swindler.Game
 			"Connected".Log();
 			
 			//TODO: Instantiate player
-			SpawnAuthoritativePlayer(5010, 5025);
+			SpawnAuthoritativePlayer(5021, 5034);
 		}
 
 		private GameServer CreateGameServer()
