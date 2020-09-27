@@ -57,7 +57,7 @@ namespace Swindler.Multiplayer
     
         public void OnNetworkReceive(NetPeer peer, NetPacketReader reader, DeliveryMethod deliveryMethod)
         {
-            "Got packet".Log();
+            //"Got packet".Log();
             short packetId = reader.GetShort();
 
             switch (packetId)

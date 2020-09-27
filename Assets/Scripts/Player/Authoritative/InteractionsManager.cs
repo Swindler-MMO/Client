@@ -32,11 +32,17 @@ namespace Player.Authoritative
 				return;
 			
 			//Set indicator when hovering an interactable tile
+
+			InteractableTile interactableTile = (InteractableTile) tile;
+
+			if (!interactableTile.CanInterract(position, interactionMap))
+				return;
+			
 			SetIndicator();
 			
 			//Handle tile interaction if clicked
 			if(Input.GetMouseButtonDown(0))
-				((InteractableTile) tile).OnInteract(position);
+				interactableTile.OnInteract(position);
 		}
 
 		private void SetIndicator()

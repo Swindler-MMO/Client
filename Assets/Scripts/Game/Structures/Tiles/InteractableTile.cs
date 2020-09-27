@@ -23,5 +23,6 @@ namespace Swindler.Game.Structures.Tiles
 		}
 
 		public abstract void OnInteract(Vector3Int position);
+		public abstract bool CanInterract(Vector3Int position, Tilemap map);
 	}
 }
