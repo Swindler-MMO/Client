@@ -14,7 +14,6 @@ namespace Swindler.Game.Structures.Tiles
 
 		public override void OnInteract(Vector3Int position)
 		{
-			name.Log("Resource name is");
 			GameManager.Server.Send(new PlayerInteractResourcePacket(resourceId, position), DeliveryMethod.Sequenced);
 		}
 

@@ -2,12 +2,14 @@
 using Multiplayer.Packets.Server;
 using Player.Authoritative;
 using Swindler.Multiplayer;
+using Swindler.Player.Authoritative.Inventory;
 using Swindler.Player.Authoritative.Movement;
 using Swindler.Utils;
 using Swindler.World;
 using Swindler.World.Renderers;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 namespace Swindler.Game
 {
@@ -16,12 +18,13 @@ namespace Swindler.Game
 
 		public static GameManager Instance { get; private set; }
 		public static GameServer Server { get; private set; }
-		
-		public static Inventory Inventory { get; private set; }
-		
+		public static InventoryManager InventoryManager { get; private set; }
+
 		[Header("Prefabs")]
 		public GameObject authoritativePlayer;
 		public GameObject remotePlayer;
+		public GameObject inventoryPanel;
+		public Text invText;
 
 		[Header("Player prefab objects")]
 		public Tilemap island;
@@ -31,22 +34,34 @@ namespace Swindler.Game
 		public Tilemap indicatorsMap;
 		public AnimatedTile highlightTile;
 
+		private bool inventoryOpen;
+		
 		private void Awake()
 		{
 			Server = CreateGameServer();
 			Instance = this;
+			InventoryManager = new InventoryManager();
 		}
 
 		private void Start()
 		{
 			Server.Connect();
+			inventoryPanel.SetActive(inventoryOpen);
+		}
+
+		private void Update()
+		{
+			if (Input.GetKeyDown(KeyCode.I))
+			{
+				inventoryOpen = !inventoryOpen;
+				inventoryPanel.SetActive(inventoryOpen);
+			}
 		}
 
 		public void OnConnectedToGameServer()
 		{
 			"Connected".Log();
 			
-			//TODO: Instantiate player
 			SpawnAuthoritativePlayer(5021, 5034);
 		}
 
@@ -77,7 +92,8 @@ namespace Swindler.Game
 			im.highlightTile = highlightTile;
 			im.indicatorsMap = indicatorsMap;
 
-			Inventory = p.GetComponent<Inventory>();
+			InventoryUI iui = p.GetComponent<InventoryUI>();
+			iui.SetInventory(InventoryManager, invText);
 
 			p.transform.position = new Vector3(x, y, 0);
 		}
@@ -85,10 +101,8 @@ namespace Swindler.Game
 		public void HandleResourceMined(ResourceMinedPacket p)
 		{
 			$"Server gave item {p.ItemId} x{p.Amount}".Log();
-
 			worldManager.RemoveResourceNode(p.Position);
-			Inventory.Add(p.ItemId, p.Amount);
-			DebugInventory();
+			InventoryManager.Add(new Item(p.ItemId, p.Amount));
 		}
 
 		public void HandleResourceRespawned(ResourceRespawnedPacket p)
@@ -101,10 +115,7 @@ namespace Swindler.Game
 		{
 			"---------- Player inventory debug ----------".Log();
 
-			foreach (var item in Inventory.items)
-			{
-				$"    - {item.Key} - x{item.Value}".Log();
-			}
+			
 			
 			"--------------------".Log();
 		}

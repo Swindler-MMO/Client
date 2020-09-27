@@ -1,11 +1,8 @@
 ﻿using Swindler.Utils;
 using System;
-using System.Diagnostics;
 using System.Linq;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using Debug = UnityEngine.Debug;
 
 namespace Swindler.World.Renderers
 {

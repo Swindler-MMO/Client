@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Sockets;
 using LiteNetLib;
 using Multiplayer.Packets;
@@ -86,6 +87,11 @@ namespace Swindler.Multiplayer
         public void Send(SwindlerPacket packet, DeliveryMethod method)
         {
             server.Send(packet.Serialize(), method);
+        }
+
+        private void OnDestroy()
+        {
+            manager.Stop();
         }
     }
 
