@@ -7,6 +7,7 @@ using Swindler.Player.Authoritative.Movement;
 using Swindler.Utils;
 using Swindler.World;
 using Swindler.World.Renderers;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
@@ -15,19 +16,16 @@ namespace Swindler.Game
 {
 	public class GameManager : MonoBehaviour
 	{
-
 		public static GameManager Instance { get; private set; }
 		public static GameServer Server { get; private set; }
 		public static InventoryManager InventoryManager { get; private set; }
 
-		[Header("Prefabs")]
-		public GameObject authoritativePlayer;
+		[Header("Prefabs")] public GameObject authoritativePlayer;
 		public GameObject remotePlayer;
 		public GameObject inventoryPanel;
 		public Text invText;
 
-		[Header("Player prefab objects")]
-		public Tilemap island;
+		[Header("Player prefab objects")] public Tilemap island;
 		public WorldManager worldManager;
 		public WaterRenderer waterRenderer;
 		public Tilemap interactionMap;
@@ -35,7 +33,7 @@ namespace Swindler.Game
 		public AnimatedTile highlightTile;
 
 		private bool inventoryOpen;
-		
+
 		private void Awake()
 		{
 			Server = CreateGameServer();
@@ -61,15 +59,24 @@ namespace Swindler.Game
 		public void OnConnectedToGameServer()
 		{
 			"Connected".Log();
-			
+
 			SpawnAuthoritativePlayer(5021, 5034);
+		}
+
+		public void OnDisconnectedFromGameServer()
+		{
+#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
 		}
 
 		private GameServer CreateGameServer()
 		{
 			GameObject obj = new GameObject("GameServer");
 			obj.transform.parent = transform;
-			
+
 			GameServer gs = obj.AddComponent<GameServer>();
 			gs.game = this;
 			return gs;
@@ -109,15 +116,6 @@ namespace Swindler.Game
 		{
 			"Received a resource respawn event".Log();
 			worldManager.AddResourceNode(p.Position, p.Resource);
-		}
-
-		private void DebugInventory()
-		{
-			"---------- Player inventory debug ----------".Log();
-
-			
-			
-			"--------------------".Log();
 		}
 	}
 }

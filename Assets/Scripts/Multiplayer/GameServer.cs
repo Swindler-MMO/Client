@@ -48,7 +48,8 @@ namespace Swindler.Multiplayer
     
         public void OnPeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
         {
-            $"Disconnected for: {disconnectInfo.AdditionalData.GetString()}".Log();
+            $"Disconnected for: {disconnectInfo.Reason}".Log();
+            GameManager.Instance.OnDisconnectedFromGameServer();
         }
     
         public void OnNetworkError(IPEndPoint endPoint, SocketError socketError)
