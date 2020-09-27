@@ -110,7 +110,22 @@ namespace  Swindler.World
 			isListLoaded = true;
 			UpdateWorld(position);
 		}
-		
+
+		public void RemoveResourceNode(Vector2Int position)
+		{
+			Tilemap props = tilemaps["props"];
+			props.SetTile(new Vector3Int(position.x, position.y, 0), null);
+			props.SetTile(new Vector3Int(position.x, position.y + 1, 0), null);
+		}
+
+		public void AddResourceNode(Vector2Int p, byte resourceType)
+		{
+			Tilemap props = tilemaps["props"];
+			TileBase tile = resourceType == 0 ? rockTile : treeTile;
+			
+			props.SetTile(new Vector3Int(p.x, p.y, 0), tile);
+			props.SetTile(new Vector3Int(p.x, p.y + 1, 0), tile);
+		}
 	}
 
 	public class IslandPosition : IQuadTreeObject

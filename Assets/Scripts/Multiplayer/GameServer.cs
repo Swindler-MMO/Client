@@ -2,6 +2,7 @@
 using System.Net.Sockets;
 using LiteNetLib;
 using Multiplayer.Packets;
+using Multiplayer.Packets.Server;
 using Swindler.Game;
 using Swindler.Utils;
 using UnityEngine;
@@ -56,7 +57,18 @@ namespace Swindler.Multiplayer
     
         public void OnNetworkReceive(NetPeer peer, NetPacketReader reader, DeliveryMethod deliveryMethod)
         {
-            
+            "Got packet".Log();
+            short packetId = reader.GetShort();
+
+            switch (packetId)
+            {
+                case 1:
+                    GameManager.Instance.HandleResourceMined(new ResourceMinedPacket(reader));
+                    break;
+                case 2:
+                    GameManager.Instance.HandleResourceRespawned(new ResourceRespawnedPacket(reader));
+                    break;
+            }
         }
     
         public void OnNetworkLatencyUpdate(NetPeer peer, int latency)

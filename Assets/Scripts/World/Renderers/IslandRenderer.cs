@@ -75,6 +75,7 @@ namespace Swindler.World.Renderers
 							//Trees need 1 tile up
 							map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), treeTile);
 							map.SetTile(new Vector3Int(islandX + x, islandY + y + 1, 0), treeTile);
+							
 							continue;
 						}
 						
@@ -86,10 +87,10 @@ namespace Swindler.World.Renderers
 							continue;
 						}
 						
-						if (tile > 0)
-						{
-							map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), tiles[tile]);
-						}
+						// if (tile > 0)
+						// {
+						// 	map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), tiles[tile]);
+						// }
 					}
 
 					continue;

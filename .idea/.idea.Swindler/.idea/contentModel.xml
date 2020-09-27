@@ -46,18 +46,32 @@
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="Structures" t="Include">
+              <e p="Tiles" t="Include">
+                <e p="InteractableTile.cs" t="Include" />
+                <e p="ResourceTIle.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Multiplayer" t="Include">
-            <e p="GameEventListenner.cs" t="Include" />
             <e p="GameServer.cs" t="Include" />
             <e p="Packets" t="Include">
-              <e p="PlayerAuthPacket.cs" t="Include" />
-              <e p="PlayerPositionPacket.cs" t="Include" />
+              <e p="Player" t="Include">
+                <e p="PlayerAuthPacket.cs" t="Include" />
+                <e p="PlayerInteractResourcePacket.cs" t="Include" />
+                <e p="PlayerPositionPacket.cs" t="Include" />
+              </e>
+              <e p="Server" t="Include">
+                <e p="ResourceMinedPacket.cs" t="Include" />
+                <e p="ResourceRespawnedPacket.cs" t="Include" />
+              </e>
               <e p="SwindlerPacket.cs" t="Include" />
             </e>
           </e>
           <e p="Player" t="Include">
             <e p="Authoritative" t="Include">
+              <e p="InteractionsManager.cs" t="Include" />
+              <e p="Inventory.cs" t="Include" />
               <e p="Movement" t="Include">
                 <e p="MoveVelocity.cs" t="Include" />
                 <e p="PlayerMovementInput.cs" t="Include" />

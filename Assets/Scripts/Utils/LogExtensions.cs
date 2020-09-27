@@ -22,12 +22,18 @@ namespace Swindler.Utils
 		{
 			Print(value, name);
 		}
+
+		public static void Log(this Vector3 value, string name = null)
+		{
+			Print(value, name);
+		}
+		
 		public static void Log(this Vector2Int value, string name = null)
 		{
 			Print(value, name);
 		}
-
-		public static void Log(this Vector3 value, string name = null)
+		
+		public static void Log(this Vector3Int value, string name = null)
 		{
 			Print(value, name);
 		}

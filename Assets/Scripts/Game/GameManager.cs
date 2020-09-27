@@ -1,4 +1,6 @@
 ﻿using System;
+using Multiplayer.Packets.Server;
+using Player.Authoritative;
 using Swindler.Multiplayer;
 using Swindler.Player.Authoritative.Movement;
 using Swindler.Utils;
@@ -15,6 +17,8 @@ namespace Swindler.Game
 		public static GameManager Instance { get; private set; }
 		public static GameServer Server { get; private set; }
 		
+		public static Inventory Inventory { get; private set; }
+		
 		[Header("Prefabs")]
 		public GameObject authoritativePlayer;
 		public GameObject remotePlayer;
@@ -23,6 +27,9 @@ namespace Swindler.Game
 		public Tilemap island;
 		public WorldManager worldManager;
 		public WaterRenderer waterRenderer;
+		public Tilemap interactionMap;
+		public Tilemap indicatorsMap;
+		public AnimatedTile highlightTile;
 
 		private void Awake()
 		{
@@ -64,9 +71,42 @@ namespace Swindler.Game
 
 			StayOnGround sog = p.GetComponent<StayOnGround>();
 			sog.island = island;
-			
+
+			InteractionsManager im = p.GetComponent<InteractionsManager>();
+			im.interactionMap = interactionMap;
+			im.highlightTile = highlightTile;
+			im.indicatorsMap = indicatorsMap;
+
+			Inventory = p.GetComponent<Inventory>();
+
 			p.transform.position = new Vector3(x, y, 0);
 		}
-		
+
+		public void HandleResourceMined(ResourceMinedPacket p)
+		{
+			$"Server gave item {p.ItemId} x{p.Amount}".Log();
+
+			worldManager.RemoveResourceNode(p.Position);
+			Inventory.Add(p.ItemId, p.Amount);
+			DebugInventory();
+		}
+
+		public void HandleResourceRespawned(ResourceRespawnedPacket p)
+		{
+			"Received a resource respawn event".Log();
+			worldManager.AddResourceNode(p.Position, p.Resource);
+		}
+
+		private void DebugInventory()
+		{
+			"---------- Player inventory debug ----------".Log();
+
+			foreach (var item in Inventory.items)
+			{
+				$"    - {item.Key} - x{item.Value}".Log();
+			}
+			
+			"--------------------".Log();
+		}
 	}
 }
