@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Remote Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Remote Player.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerJoinedPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerJoinedPacket.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Remote.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +77,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerAuthPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/SwindlerPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerPositionPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/IslandRenderer/IslandRenderer.cs" />
@@ -95,8 +108,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerJoinedPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +187,8 @@
       <workItem from="1601199719709" duration="7501000" />
       <workItem from="1601216926559" duration="1179000" />
       <workItem from="1601227393563" duration="4049000" />
-      <workItem from="1601232645884" duration="502000" />
+      <workItem from="1601232645884" duration="6104000" />
+      <workItem from="1601300986565" duration="1508000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>

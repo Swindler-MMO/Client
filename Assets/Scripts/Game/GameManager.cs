@@ -1,6 +1,7 @@
 ﻿using System;
 using Multiplayer.Packets.Server;
 using Player.Authoritative;
+using Player.Remote;
 using Swindler.Multiplayer;
 using Swindler.Player.Authoritative.Inventory;
 using Swindler.Player.Authoritative.Movement;
@@ -19,7 +20,7 @@ namespace Swindler.Game
 		public static GameManager Instance { get; private set; }
 		public static GameServer Server { get; private set; }
 		public static InventoryManager InventoryManager { get; private set; }
-
+		
 		[Header("Prefabs")] public GameObject authoritativePlayer;
 		public GameObject remotePlayer;
 		public GameObject inventoryPanel;
@@ -33,6 +34,7 @@ namespace Swindler.Game
 		public AnimatedTile highlightTile;
 
 		private bool inventoryOpen;
+		private int playerId;
 
 		private void Awake()
 		{
@@ -56,10 +58,11 @@ namespace Swindler.Game
 			}
 		}
 
-		public void OnConnectedToGameServer()
+		public void OnConnectedToGameServer(int playerId)
 		{
 			"Connected".Log();
 
+			this.playerId = playerId;
 			SpawnAuthoritativePlayer(5021, 5034);
 		}
 
@@ -105,6 +108,28 @@ namespace Swindler.Game
 			p.transform.position = new Vector3(x, y, 0);
 		}
 
+		private void SpawnRemotePlayer(NetPlayer np)
+		{
+			GameObject p = Instantiate(remotePlayer);
+
+			RemotePlayer rp = p.GetComponent<RemotePlayer>();
+			rp.SetNetPlayer(np);
+		}
+		
+		public void HandleInitialSetup(InitialSetupPacket p)
+		{
+			"Received an initialization packet".Log();
+
+			playerId = p.PlayerId;
+			
+			foreach (NetPlayer np in p.Players)
+			{
+				//$"Player #{np.Id} - ({np.Name}) is at ({np.Position.x};{np.Position.y})".Log();
+				SpawnRemotePlayer(np);
+			}
+			
+		}
+
 		public void HandleResourceMined(ResourceMinedPacket p)
 		{
 			$"Server gave item {p.ItemId} x{p.Amount}".Log();
@@ -116,6 +141,15 @@ namespace Swindler.Game
 		{
 			"Received a resource respawn event".Log();
 			worldManager.AddResourceNode(p.Position, p.Resource);
+		}
+
+		public void HandlePlayerJoined(PlayerJoinedPacket p)
+		{
+
+			if (p.Player.Id == playerId)
+				return;
+			
+			SpawnRemotePlayer(p.Player);
 		}
 	}
 }

@@ -19,6 +19,9 @@ namespace Swindler.Player.Authoritative.Movement
 		{
 			lastPosition = transform.position;
 			lastUpdate = 0f;
+			
+			SendPosition();
+			
 		}
 
 		private void Update()

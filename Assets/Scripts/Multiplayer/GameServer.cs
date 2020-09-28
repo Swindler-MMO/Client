@@ -43,7 +43,7 @@ namespace Swindler.Multiplayer
         public void OnPeerConnected(NetPeer peer)
         {
             server = peer;
-            game.OnConnectedToGameServer();
+            game.OnConnectedToGameServer(peer.Id);
         }
     
         public void OnPeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
@@ -59,16 +59,21 @@ namespace Swindler.Multiplayer
     
         public void OnNetworkReceive(NetPeer peer, NetPacketReader reader, DeliveryMethod deliveryMethod)
         {
-            //"Got packet".Log();
             short packetId = reader.GetShort();
-
+            
+            $"Got packet #{packetId}".Log();
             switch (packetId)
             {
+                case 0: GameManager.Instance.HandleInitialSetup(new InitialSetupPacket(reader));
+                    break;
                 case 1:
                     GameManager.Instance.HandleResourceMined(new ResourceMinedPacket(reader));
                     break;
                 case 2:
                     GameManager.Instance.HandleResourceRespawned(new ResourceRespawnedPacket(reader));
+                    break;
+                case 3:
+                    GameManager.Instance.HandlePlayerJoined(new PlayerJoinedPacket(reader));
                     break;
             }
         }

@@ -347,7 +347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   authoritativePlayer: {fileID: 9194946024192039305, guid: 30b82a9725bd3f8449626e3fc17319cf,
     type: 3}
-  remotePlayer: {fileID: 0}
+  remotePlayer: {fileID: 3896461872296425676, guid: 0207f76136f1f8d4885aec8700aee019,
+    type: 3}
   inventoryPanel: {fileID: 1158380691}
   invText: {fileID: 1414527097}
   island: {fileID: 2042877051}
