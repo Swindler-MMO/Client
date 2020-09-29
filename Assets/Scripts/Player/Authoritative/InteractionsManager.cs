@@ -1,6 +1,4 @@
-﻿using System;
-using Swindler.Game.Structures;
-using Swindler.Game.Structures.Tiles;
+﻿using Swindler.Game.Structures.Tiles;
 using Swindler.Utilities;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -9,10 +7,11 @@ namespace Player.Authoritative
 {
 	public class InteractionsManager : MonoBehaviour
 	{
+
+		private const float INTERACT_RATE = .5f;
 		
 		[Header("Tilemaps and tiles")]
 		public Tilemap interactionMap;
-		public Color highlightColor = new Color32(255, 235, 153, 255);
 		public AnimatedTile highlightTile;
 		public Tilemap indicatorsMap;
 
@@ -20,11 +19,17 @@ namespace Player.Authoritative
 		
 		private Vector3Int position;
 		private Vector3Int lastIndicator = Vector3Int.zero;
-		private bool indicatorSet = false;
+		private bool indicatorSet;
+		private float nextInteraction;
+
+		private void Awake()
+		{
+			nextInteraction = Time.time;
+		}
 
 		private void Update()
 		{
-			position = Swindler.Utilities.Utils.MouseToCell(interactionMap);
+			position = Utils.MouseToCell(interactionMap);
 
 			// Check if indicator needs to be reset
 			if (position != lastIndicator && indicatorSet)
@@ -45,8 +50,8 @@ namespace Player.Authoritative
 			SetIndicator();
 			
 			//Handle tile interaction if clicked
-			if(Input.GetMouseButtonDown(0))
-				interactableTile.OnInteract(position, audioSource);
+			if (Input.GetMouseButton(0))
+				Interact(interactableTile);
 		}
 
 		private void SetIndicator()
@@ -61,6 +66,16 @@ namespace Player.Authoritative
 			indicatorsMap.SetTile(lastIndicator, null);
 			lastIndicator = Vector3Int.zero;
 			indicatorSet = false;
+		}
+
+		private void Interact(InteractableTile interactableTile)
+		{
+
+			if (Time.time < nextInteraction)
+				return;
+
+			nextInteraction = Time.time + INTERACT_RATE;
+			interactableTile.OnInteract(position, audioSource);
 		}
 		
 	}

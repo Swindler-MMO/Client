@@ -5,7 +5,7 @@ using Random = System.Random;
 
 namespace Swindler.Utilities
 {
-	class Utils
+	public static class Utils
 	{
 
 		private static readonly string CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

@@ -104,7 +104,6 @@
             </e>
             <e p="HttpUtils.cs" t="Include" />
             <e p="PoissonDiscSampling.cs" t="Include" />
-            <e p="PoissonDisplay.cs" t="Include" />
             <e p="QuadTree.cs" t="Include" />
             <e p="SerializableStringTilemap.cs" t="Include" />
             <e p="Utils.cs" t="Include" />

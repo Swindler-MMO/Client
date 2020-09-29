@@ -20,25 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining/Metal Impact.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining/Metal Impact.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining/Stone Impact.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining/Stone Impact.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining/Wood Impact.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Mining/Wood Impact.ogg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Rock.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Rock.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree Resource.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree Resource.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/InteractableTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/InteractableTile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/PoissonDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/PoissonDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/PlayerAuthPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/SwindlerPacket.cs" />
@@ -113,9 +98,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" />
       </list>
     </option>
   </component>
@@ -155,10 +141,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14764">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14764" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -192,6 +178,7 @@
       <workItem from="1601300986565" duration="2065000" />
       <workItem from="1601318091901" duration="4637000" />
       <workItem from="1601365284698" duration="7552000" />
+      <workItem from="1601405201532" duration="2614000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
@@ -332,5 +319,24 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="689" y="-2" width="1177" height="1976" key="search.everywhere.popup/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601120756533" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs</url>
+          <line>141</line>
+          <properties documentPath="C:\Users\julie\Dev\Unity\Swindler\Assets\Scripts\Game\GameManager.cs" initialLine="141">
+            <startOffsets>
+              <option value="3585" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3586" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
