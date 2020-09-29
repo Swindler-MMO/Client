@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Swindler.Utilities;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 
 namespace Swindler.Player.Authoritative.Inventory
@@ -39,15 +40,15 @@ namespace Swindler.Player.Authoritative.Inventory
 				}
 				
 				//Complete the stack
+				item.Amount = item.StackSize;
 				
-				int exceeding = Mathf.Abs(item.StackSize - (item.Amount + newItem.Amount));
 				//Add the remaining to a new stack
+				int exceeding = Mathf.Abs(item.StackSize - (item.Amount + newItem.Amount));
 				Items.Add(new Item(item.Id, (ushort) exceeding));
 				wasAdded = true;
 				break;
 			}
 			
-			//Should not happen
 			if(!wasAdded)
 				Items.Add(newItem);
 			

@@ -69,6 +69,7 @@
                 <e p="PlayerJoinedPacket.cs" t="Include" />
                 <e p="PlayerLeftPacket.cs" t="Include" />
                 <e p="ResourceMinedPacket.cs" t="Include" />
+                <e p="ResourceRemovedPacket.cs" t="Include" />
                 <e p="ResourceRespawnedPacket.cs" t="Include" />
               </e>
               <e p="SwindlerPacket.cs" t="Include" />

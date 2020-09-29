@@ -82,6 +82,9 @@ namespace Swindler.Multiplayer
                 case 5:
                     GameManager.Instance.HandlePlayerDisconnect(new PlayerLeftPacket(reader));
                     break;
+                case 6:
+                    GameManager.Instance.HandleResourceRemoved(new ResourceRemovedPacket(reader));
+                    break;
             }
         }
     

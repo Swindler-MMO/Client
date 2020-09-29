@@ -179,5 +179,11 @@ namespace Swindler.Game
 			remotePlayers[p.Id].OnDisconnect();
 			remotePlayers.Remove(p.Id);
 		}
+
+		public void HandleResourceRemoved(ResourceRemovedPacket p)
+		{
+			$"Resource {p.Position} got removed".Log();
+			worldManager.RemoveResourceNode(p.Position);
+		}
 	}
 }
