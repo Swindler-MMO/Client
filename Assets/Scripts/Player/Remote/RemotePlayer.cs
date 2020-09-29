@@ -1,4 +1,5 @@
 ﻿using Swindler.Multiplayer;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 
 namespace Player.Remote
@@ -9,6 +10,8 @@ namespace Player.Remote
 		public int id;
 		public string playerName;
 
+		private float lastUpdated;
+		
 		public void SetNetPlayer(NetPlayer pl)
 		{
 			id = pl.Id;
@@ -18,5 +21,19 @@ namespace Player.Remote
 			transform.position = pl.Position;
 		}
 
+		public void SetPosition(Vector2 position)
+		{
+			//TODO: EXTRAPOLATION
+			$"[Player #{id}] last updated {Time.time - lastUpdated} ms ago is at ({position.x};{position.y})".Log();
+			transform.position = position;
+			
+			lastUpdated = Time.time;
+		}
+
+		public void OnDisconnect()
+		{
+			Destroy(gameObject);
+		}
+		
 	}
 }

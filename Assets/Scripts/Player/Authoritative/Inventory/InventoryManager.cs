@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Swindler.Utils;
+using Swindler.Utilities;
 using UnityEngine;
 
 namespace Swindler.Player.Authoritative.Inventory

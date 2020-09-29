@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Swindler.Utils
+namespace Swindler.Utilities
 {
 	public interface IQuadTreeObject
 	{

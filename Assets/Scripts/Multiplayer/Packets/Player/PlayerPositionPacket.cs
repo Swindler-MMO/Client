@@ -1,8 +1,6 @@
-﻿using System;
-using System.Diagnostics;
-using LiteNetLib.Utils;
-using Swindler.Utils;
+﻿using LiteNetLib.Utils;
 using UnityEngine;
+using Swindler.Utilities.Extensions;
 
 namespace Multiplayer.Packets
 {
@@ -21,8 +19,7 @@ namespace Multiplayer.Packets
 		protected override void PerformSerialization(NetDataWriter w)
 		{
 			w.Put(PACKET_ID);
-			w.Put(p.x);
-			w.Put(p.y);
+			w.Put(p);
 		}
 	}
 }

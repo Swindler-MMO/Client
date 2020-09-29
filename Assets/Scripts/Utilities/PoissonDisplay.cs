@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
-using Swindler.Utils;
+using Swindler.Utilities;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 

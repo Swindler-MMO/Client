@@ -1,7 +1,7 @@
 ﻿using System;
 using Swindler.Game.Structures;
 using Swindler.Game.Structures.Tiles;
-using Swindler.Utils;
+using Swindler.Utilities;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -20,7 +20,7 @@ namespace Player.Authoritative
 
 		private void Update()
 		{
-			position = Swindler.Utils.Utils.MouseToCell(interactionMap);
+			position = Swindler.Utilities.Utils.MouseToCell(interactionMap);
 
 			// Check if indicator needs to be reset
 			if (position != lastIndicator && indicatorSet)
@@ -35,7 +35,7 @@ namespace Player.Authoritative
 
 			InteractableTile interactableTile = (InteractableTile) tile;
 
-			if (!interactableTile.CanInterract(position, interactionMap))
+			if (!interactableTile.CanInteract(position, interactionMap))
 				return;
 			
 			SetIndicator();

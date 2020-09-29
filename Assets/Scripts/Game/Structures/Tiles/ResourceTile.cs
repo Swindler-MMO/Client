@@ -1,6 +1,6 @@
 ﻿using LiteNetLib;
 using Multiplayer.Packets;
-using Swindler.Utils;
+using Swindler.Utilities;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -14,10 +14,12 @@ namespace Swindler.Game.Structures.Tiles
 
 		public override void OnInteract(Vector3Int position)
 		{
-			GameManager.Server.Send(new PlayerInteractResourcePacket(resourceId, position), DeliveryMethod.Sequenced);
+			GameManager.Server.Send(
+				new PlayerInteractResourcePacket(resourceId, new Vector2Int(position.x, position.y)),
+				DeliveryMethod.Sequenced);
 		}
 
-		public override bool CanInterract(Vector3Int position, Tilemap map)
+		public override bool CanInteract(Vector3Int position, Tilemap map)
 		{
 			return IsTopTile(position, map);
 		}

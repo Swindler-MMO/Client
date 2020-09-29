@@ -1,5 +1,5 @@
 ﻿using System;
-using Swindler.Utils;
+using Swindler.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;

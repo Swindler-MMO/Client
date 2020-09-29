@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using Random = System.Random;
 
-namespace Swindler.Utils
+namespace Swindler.Utilities
 {
 	class Utils
 	{

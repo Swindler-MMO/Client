@@ -2,7 +2,7 @@
 using LiteNetLib;
 using Multiplayer.Packets;
 using Swindler.Game;
-using Swindler.Utils;
+using Swindler.Utilities;
 using UnityEngine;
 
 namespace Swindler.Player.Authoritative.Movement
@@ -10,7 +10,7 @@ namespace Swindler.Player.Authoritative.Movement
 	public class SendPlayerPosition : MonoBehaviour
 	{
 		private const float SEND_THRESHOLD = 0.0001f;
-		private const float UPDATE_TIME = 1f; // send update every 1000ms
+		private const float UPDATE_TIME = 0.1f; // send update every 16ms
 
 		private Vector3 lastPosition;
 		private float lastUpdate;
@@ -19,9 +19,8 @@ namespace Swindler.Player.Authoritative.Movement
 		{
 			lastPosition = transform.position;
 			lastUpdate = 0f;
-			
+
 			SendPosition();
-			
 		}
 
 		private void Update()

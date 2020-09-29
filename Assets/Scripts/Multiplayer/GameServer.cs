@@ -5,7 +5,8 @@ using LiteNetLib;
 using Multiplayer.Packets;
 using Multiplayer.Packets.Server;
 using Swindler.Game;
-using Swindler.Utils;
+using Swindler.Utilities;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 
 namespace Swindler.Multiplayer
@@ -43,7 +44,7 @@ namespace Swindler.Multiplayer
         public void OnPeerConnected(NetPeer peer)
         {
             server = peer;
-            game.OnConnectedToGameServer(peer.Id);
+            game.OnConnectedToGameServer();
         }
     
         public void OnPeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
@@ -61,7 +62,7 @@ namespace Swindler.Multiplayer
         {
             short packetId = reader.GetShort();
             
-            $"Got packet #{packetId}".Log();
+            //$"Got packet #{packetId}".Log();
             switch (packetId)
             {
                 case 0: GameManager.Instance.HandleInitialSetup(new InitialSetupPacket(reader));
@@ -74,6 +75,12 @@ namespace Swindler.Multiplayer
                     break;
                 case 3:
                     GameManager.Instance.HandlePlayerJoined(new PlayerJoinedPacket(reader));
+                    break;
+                case 4:
+                    GameManager.Instance.HandleGameSnapshot(new GameSnapshot(reader));
+                    break;
+                case 5:
+                    GameManager.Instance.HandlePlayerDisconnect(new PlayerLeftPacket(reader));
                     break;
             }
         }

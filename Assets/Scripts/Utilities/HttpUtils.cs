@@ -7,7 +7,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Swindler.Utils
+namespace Swindler.Utilities
 {
 	public static class HttpUtils
 	{

@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using Multiplayer.Packets.Server;
 using Player.Authoritative;
 using Player.Remote;
 using Swindler.Multiplayer;
 using Swindler.Player.Authoritative.Inventory;
 using Swindler.Player.Authoritative.Movement;
-using Swindler.Utils;
+using Swindler.Utilities;
+using Swindler.Utilities.Extensions;
 using Swindler.World;
 using Swindler.World.Renderers;
 using UnityEditor;
@@ -33,7 +35,9 @@ namespace Swindler.Game
 		public Tilemap indicatorsMap;
 		public AnimatedTile highlightTile;
 
+		private Dictionary<int, RemotePlayer> remotePlayers;
 		private bool inventoryOpen;
+		private bool canReceiveSnapshot;
 		private int playerId;
 
 		private void Awake()
@@ -41,6 +45,7 @@ namespace Swindler.Game
 			Server = CreateGameServer();
 			Instance = this;
 			InventoryManager = new InventoryManager();
+			remotePlayers = new Dictionary<int, RemotePlayer>();
 		}
 
 		private void Start()
@@ -58,11 +63,9 @@ namespace Swindler.Game
 			}
 		}
 
-		public void OnConnectedToGameServer(int playerId)
+		public void OnConnectedToGameServer()
 		{
 			"Connected".Log();
-
-			this.playerId = playerId;
 			SpawnAuthoritativePlayer(5021, 5034);
 		}
 
@@ -114,6 +117,8 @@ namespace Swindler.Game
 
 			RemotePlayer rp = p.GetComponent<RemotePlayer>();
 			rp.SetNetPlayer(np);
+			
+			remotePlayers.Add(np.Id, rp);
 		}
 		
 		public void HandleInitialSetup(InitialSetupPacket p)
@@ -128,6 +133,7 @@ namespace Swindler.Game
 				SpawnRemotePlayer(np);
 			}
 			
+			canReceiveSnapshot = true;
 		}
 
 		public void HandleResourceMined(ResourceMinedPacket p)
@@ -150,6 +156,28 @@ namespace Swindler.Game
 				return;
 			
 			SpawnRemotePlayer(p.Player);
+		}
+
+		public void HandleGameSnapshot(GameSnapshot s)
+		{
+			if (!canReceiveSnapshot)
+				return;
+			
+			foreach (var kv in s.Positions)
+			{
+				if(kv.Key == playerId)
+					continue;
+
+				remotePlayers[kv.Key].SetPosition(kv.Value);
+
+			}
+		}
+
+		public void HandlePlayerDisconnect(PlayerLeftPacket p)
+		{
+			$"Player #{p.Id} left".Log();
+			remotePlayers[p.Id].OnDisconnect();
+			remotePlayers.Remove(p.Id);
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Swindler.Utils;
+using Swindler.Utilities;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -23,6 +23,6 @@ namespace Swindler.Game.Structures.Tiles
 		}
 
 		public abstract void OnInteract(Vector3Int position);
-		public abstract bool CanInterract(Vector3Int position, Tilemap map);
+		public abstract bool CanInteract(Vector3Int position, Tilemap map);
 	}
 }

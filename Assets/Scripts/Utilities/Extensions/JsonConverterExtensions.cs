@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Swindler.Json.Utils
+namespace Swindler.Json.Utils.Extensions
 {
 	public static class ConverterInitializer
 	{
@@ -49,7 +49,10 @@ namespace Swindler.Json.Utils
 			initialized = true;
 		}
 	}
+}
 
+namespace Swindler.Json.Utils
+{
 	public class JsonVector2Converter : JsonConverter<Vector2>
 	{
 		public override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Swindler.Utils;
+using Swindler.Utilities;
 using System.Threading.Tasks;
 using Swindler.World.Renderers;
 using UnityEngine;

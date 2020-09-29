@@ -1,5 +1,6 @@
 ﻿using LiteNetLib.Utils;
 using Swindler.Multiplayer;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 
 namespace Multiplayer.Packets.Server
@@ -13,7 +14,7 @@ namespace Multiplayer.Packets.Server
 		{
 			int playerId = r.GetInt();
 			string name = r.GetString();
-			Vector2 position = new Vector2(r.GetFloat(), r.GetFloat());
+			Vector2 position = r.GetVector2();
 			Player = new NetPlayer(playerId, name, position);
 		}
 		

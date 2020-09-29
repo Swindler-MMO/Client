@@ -1,5 +1,6 @@
 ﻿using LiteNetLib.Utils;
 using UnityEngine;
+using Swindler.Utilities.Extensions;
 
 namespace Multiplayer.Packets
 {
@@ -7,10 +8,10 @@ namespace Multiplayer.Packets
 	{
 		private const short PACKET_ID = 2;
 
-		private Vector3Int position;
+		private Vector2Int position;
 		private byte resourceId;
 
-		public PlayerInteractResourcePacket(byte resourceId, Vector3Int position)
+		public PlayerInteractResourcePacket(byte resourceId, Vector2Int position)
 		{
 			this.resourceId = resourceId;
 			this.position = position;
@@ -21,8 +22,7 @@ namespace Multiplayer.Packets
 			w.Put(PACKET_ID);
 
 			//We only need x,y coordinates
-			w.Put(position.x);
-			w.Put(position.y);
+			w.Put(position);
 
 			w.Put(resourceId);
 		}

@@ -1,7 +1,7 @@
 ﻿using Swindler.World;
 using UnityEngine;
 
-namespace Swindler.Utils
+namespace Swindler.Utilities.Extensions
 {
 	public static class LogExtensions
 	{

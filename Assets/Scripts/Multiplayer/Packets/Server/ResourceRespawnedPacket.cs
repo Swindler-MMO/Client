@@ -1,4 +1,5 @@
 ﻿using LiteNetLib.Utils;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 
 namespace Multiplayer.Packets.Server
@@ -10,7 +11,7 @@ namespace Multiplayer.Packets.Server
 
 		public ResourceRespawnedPacket(NetDataReader r)
 		{
-			Position = new Vector2Int(r.GetInt(), r.GetInt());
+			Position = r.GetVector2Int();
 			Resource = r.GetByte();
 		}
 	}

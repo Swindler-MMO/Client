@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Swindler.Utils
+namespace Swindler.Utilities
 {
 	public class WeightedRandomBag<T>
 	{

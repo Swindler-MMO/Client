@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 
-namespace Swindler.Utils
+namespace Swindler.Utilities
 {
 	[System.Serializable]
 	public class SerializableStringTilemap : SerializableDictionaryBase<string, Tilemap>
