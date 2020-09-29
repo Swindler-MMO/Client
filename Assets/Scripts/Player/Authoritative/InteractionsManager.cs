@@ -31,12 +31,12 @@ namespace Player.Authoritative
 		{
 			position = Utils.MouseToCell(interactionMap);
 
-			// Check if indicator needs to be reset
-			if (position != lastIndicator && indicatorSet)
-				RemoveIndicator();
-
-
 			TileBase tile = interactionMap.GetTile(position);
+			
+			// Check if indicator needs to be reset
+			if (tile == null || (position != lastIndicator && indicatorSet))
+				RemoveIndicator();
+			
 			if (!(tile is InteractableTile))
 				return;
 			
@@ -61,7 +61,7 @@ namespace Player.Authoritative
 			indicatorSet = true;
 		}
 
-		private void RemoveIndicator()
+		public void RemoveIndicator()
 		{
 			indicatorsMap.SetTile(lastIndicator, null);
 			lastIndicator = Vector3Int.zero;
@@ -70,7 +70,6 @@ namespace Player.Authoritative
 
 		private void Interact(InteractableTile interactableTile)
 		{
-
 			if (Time.time < nextInteraction)
 				return;
 

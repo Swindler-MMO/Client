@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/PoissonDisplay.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/PoissonDisplay.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +172,7 @@
       <workItem from="1601300986565" duration="2065000" />
       <workItem from="1601318091901" duration="4637000" />
       <workItem from="1601365284698" duration="7552000" />
-      <workItem from="1601405201532" duration="2614000" />
+      <workItem from="1601405201532" duration="2918000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
