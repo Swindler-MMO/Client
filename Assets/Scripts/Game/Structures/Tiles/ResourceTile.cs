@@ -11,9 +11,11 @@ namespace Swindler.Game.Structures.Tiles
 	{
 		public string resourceName;
 		public byte resourceId;
-
-		public override void OnInteract(Vector3Int position)
+		public AudioClip impactSound;
+		
+		public override void OnInteract(Vector3Int position, AudioSource audioSource)
 		{
+			audioSource.PlayOneShot(impactSound, 0.2f);
 			GameManager.Server.Send(
 				new PlayerInteractResourcePacket(resourceId, new Vector2Int(position.x, position.y)),
 				DeliveryMethod.Sequenced);

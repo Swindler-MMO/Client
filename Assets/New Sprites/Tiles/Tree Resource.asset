@@ -44,3 +44,4 @@ MonoBehaviour:
     m_RuleTransform: 0
   resourceName: Wood
   resourceId: 1
+  impactSound: {fileID: 8300000, guid: 9b344f7ddd760cb4fbaed6dc5fddc40c, type: 3}

@@ -9,11 +9,15 @@ namespace Player.Authoritative
 {
 	public class InteractionsManager : MonoBehaviour
 	{
+		
+		[Header("Tilemaps and tiles")]
 		public Tilemap interactionMap;
 		public Color highlightColor = new Color32(255, 235, 153, 255);
 		public AnimatedTile highlightTile;
 		public Tilemap indicatorsMap;
 
+		public AudioSource audioSource;
+		
 		private Vector3Int position;
 		private Vector3Int lastIndicator = Vector3Int.zero;
 		private bool indicatorSet = false;
@@ -42,7 +46,7 @@ namespace Player.Authoritative
 			
 			//Handle tile interaction if clicked
 			if(Input.GetMouseButtonDown(0))
-				interactableTile.OnInteract(position);
+				interactableTile.OnInteract(position, audioSource);
 		}
 
 		private void SetIndicator()

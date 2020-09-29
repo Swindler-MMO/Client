@@ -38,13 +38,15 @@ namespace Swindler.Player.Authoritative.Inventory
 					wasAdded = true;
 					break;
 				}
+
+				//Add the remaining to a new stack
+				int exceeding = Mathf.Abs(item.StackSize - (item.Amount + newItem.Amount));
+				$"StackSize ({item.StackSize}), item.Amount ({item.Amount}), newItem.Amount ({newItem.Amount})".Log();
+				Items.Add(new Item(item.Id, (ushort) exceeding));
 				
 				//Complete the stack
 				item.Amount = item.StackSize;
 				
-				//Add the remaining to a new stack
-				int exceeding = Mathf.Abs(item.StackSize - (item.Amount + newItem.Amount));
-				Items.Add(new Item(item.Id, (ushort) exceeding));
 				wasAdded = true;
 				break;
 			}
@@ -65,10 +67,18 @@ namespace Swindler.Player.Authoritative.Inventory
 			NotifyChange();
 		}
 
+		public void Clear()
+		{
+			Items.Clear();
+			NotifyChange();
+		}
+		
 		private void NotifyChange()
 		{
 			onInventoryChanged?.Invoke(this, EventArgs.Empty);
 		}
+
+		
 	}
 	
 }

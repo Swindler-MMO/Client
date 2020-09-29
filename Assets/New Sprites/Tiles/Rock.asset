@@ -44,3 +44,4 @@ MonoBehaviour:
     m_RuleTransform: 0
   resourceName: Stone
   resourceId: 0
+  impactSound: {fileID: 8300000, guid: cf80c3ada26666b4e9b19821d500fd01, type: 3}

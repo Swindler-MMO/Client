@@ -34,6 +34,7 @@ namespace Swindler.Game
 		public Tilemap interactionMap;
 		public Tilemap indicatorsMap;
 		public AnimatedTile highlightTile;
+		public AudioSource audioSource;
 
 		private Dictionary<int, RemotePlayer> remotePlayers;
 		private bool inventoryOpen;
@@ -104,6 +105,7 @@ namespace Swindler.Game
 			im.interactionMap = interactionMap;
 			im.highlightTile = highlightTile;
 			im.indicatorsMap = indicatorsMap;
+			im.audioSource = audioSource;
 
 			InventoryUI iui = p.GetComponent<InventoryUI>();
 			iui.SetInventory(InventoryManager, invText);
@@ -184,6 +186,11 @@ namespace Swindler.Game
 		{
 			$"Resource {p.Position} got removed".Log();
 			worldManager.RemoveResourceNode(p.Position);
+		}
+
+		public void ClearInventory()
+		{
+			InventoryManager.Clear();
 		}
 	}
 }
