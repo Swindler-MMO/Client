@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b0efa7d245e4d2388c56db27b4cd489, type: 3}
-  m_Name: Tree Resource
+  m_Name: Tree
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 0}
   m_DefaultGameObject: {fileID: 0}
@@ -44,4 +44,4 @@ MonoBehaviour:
     m_RuleTransform: 0
   resourceName: Wood
   resourceId: 1
-  impactSound: {fileID: 8300000, guid: 9b344f7ddd760cb4fbaed6dc5fddc40c, type: 3}
+  impactSound: {fileID: 8300000, guid: cf80c3ada26666b4e9b19821d500fd01, type: 3}

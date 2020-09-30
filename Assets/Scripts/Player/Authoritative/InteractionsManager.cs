@@ -74,7 +74,7 @@ namespace Player.Authoritative
 				return;
 
 			nextInteraction = Time.time + INTERACT_RATE;
-			interactableTile.OnInteract(position, audioSource);
+			interactableTile.OnInteract(position, interactionMap, audioSource);
 		}
 		
 	}

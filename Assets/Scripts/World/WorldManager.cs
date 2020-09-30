@@ -2,6 +2,7 @@
 using Swindler.Utilities;
 using System.Collections.Generic;
 using System.Linq;
+using Swindler.Game;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -114,8 +115,13 @@ namespace  Swindler.World
 		public void RemoveResourceNode(Vector2Int position)
 		{
 			Tilemap props = tilemaps["props"];
-			props.SetTile(new Vector3Int(position.x, position.y, 0), null);
+			Vector3Int basePos = new Vector3Int(position.x, position.y, 0);
+			props.SetTile(basePos, null);
 			props.SetTile(new Vector3Int(position.x, position.y + 1, 0), null);
+
+			HealthBar h = HealthBarController.Instance.GetHealthBar(props.GetCellCenterWorld(basePos));
+			if (h != null)
+				h.Remove();
 		}
 
 		public void AddResourceNode(Vector2Int p, byte resourceType)

@@ -22,7 +22,7 @@ namespace Swindler.Game.Structures.Tiles
 			return base.RuleMatch(neighbor, tile);
 		}
 
-		public abstract void OnInteract(Vector3Int position, AudioSource audioSource);
+		public abstract void OnInteract(Vector3Int position, Tilemap map, AudioSource audioSource);
 		public abstract bool CanInteract(Vector3Int position, Tilemap map);
 	}
 }
