@@ -1,4 +1,5 @@
-﻿using Swindler.World;
+﻿using Swindler.Game.Structures;
+using Swindler.World;
 using UnityEngine;
 
 namespace Swindler.Utilities.Extensions
@@ -49,6 +50,11 @@ namespace Swindler.Utilities.Extensions
 		}
 		
 		public static void Log(this bool value, string name = null)
+		{
+			Print(value, name);
+		}
+		
+		public static void Log(this Item value, string name = null)
 		{
 			Print(value, name);
 		}

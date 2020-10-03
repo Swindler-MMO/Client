@@ -20,261 +20,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Game.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Healhbar.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Healhbar.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/Health.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/Health.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/HB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/HB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/New island.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/New island.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_11.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_11.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_12.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_12.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_13.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_13.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_14.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_14.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_15.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_15.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_16.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_16.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_17.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_17.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_18.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_18.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_19.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_19.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_20.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_20.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_21.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_21.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_22.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_22.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_23.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_23.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_24.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_24.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_25.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_25.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_26.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_26.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_27.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_27.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_28.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_28.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_29.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_29.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_30.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_30.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_31.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_31.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_32.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_32.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_33.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_33.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_34.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_34.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_35.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_35.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_36.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_36.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_37.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_37.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_38.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_38.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_39.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_39.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_40.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_40.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_41.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_41.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_42.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_42.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_43.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_43.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_44.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_44.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_45.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_45.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_46.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_46.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_47.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_47.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_48.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_48.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_49.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_49.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_50.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_50.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_51.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_51.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_52.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_52.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_53.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_53.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_54.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_54.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_55.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_55.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_56.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_56.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_57.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_57.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_58.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_58.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_59.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_59.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_60.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_60.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_61.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_61.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_62.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_62.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_63.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_63.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_64.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_64.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_65.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_65.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_66.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_66.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_67.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_67.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_68.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_68.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_69.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_69.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_7.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_7.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_70.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_70.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_71.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_71.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_72.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_72.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_73.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_73.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_74.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_74.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_75.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_75.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_8.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_8.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_9.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tile Palettes/Island/tileset_9.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayLoading.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayLoading.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/API.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Config.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayLoadingManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Item.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Rock.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Rock.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree Resource.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Sprites/Tiles/Tree Resource.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Remote Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Remote Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/InteractableTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/InteractableTile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceMinedPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceMinedPacket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemStack.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/LogExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/LogExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/Island.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/Island.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/IslandAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/IslandAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/IslandAPI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/IslandAPI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/IslandRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/IslandRenderer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,32 +67,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/PoissonDiscSampling.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/ae/4a054f66/GridLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/1a/c746a8e8/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/c6/582ec6f1/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/3b/36e9e415/Single.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/a4/8674902f/TileBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/ce/3bb11e54/CreateAssetMenuAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/ae/4a054f66/GridLayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/PlayLoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/c6/582ec6f1/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a5/9f04e405/Vector3Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/0f/69c624f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@c051b95afa/Runtime/Tiles/RuleTile/RuleTile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/ce/3bb11e54/CreateAssetMenuAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a3/ae16e4f7/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/WaterRenderer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/API/IslandView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/Renderers/WaterRenderer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/LogExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs" />
-        <option value="$PROJECT_DIR$/Assets/New Sprites/Tiles/InteractableTile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/InteractableTile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTIle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ServerGiveItemsPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameEventListenner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/IconMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemType.cs" />
@@ -326,32 +99,43 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/NetDataReaderExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/NetDataWriterExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceRespawnedPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceMinedPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerJoinedPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Player/PlayerInteractResourcePacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Player/PlayerPositionPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/NetDataReaderExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/GameSnapshot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerLeftPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceRemovedPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/HealthBarController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/InteractableTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/API/IslandAPI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/API/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/ConfigView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/ConfigLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/LogExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceMinedPacket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Config.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/PlayLoadingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" />
       </list>
     </option>
   </component>
@@ -371,7 +155,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
@@ -430,7 +214,10 @@
       <workItem from="1601365284698" duration="7552000" />
       <workItem from="1601405201532" duration="3615000" />
       <workItem from="1601453126707" duration="7059000" />
-      <workItem from="1601482589811" duration="2765000" />
+      <workItem from="1601482589811" duration="5514000" />
+      <workItem from="1601540662987" duration="2732000" />
+      <workItem from="1601627881126" duration="7710000" />
+      <workItem from="1601712882255" duration="3350000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
@@ -547,18 +334,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="589" y="188" key="RiderGenerateDialog/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601203910689" />
-    <state x="781" y="167" key="SettingsEditor" timestamp="1601228530359">
+    <state x="781" y="167" key="SettingsEditor" timestamp="1601628216399">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="167" key="SettingsEditor/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601228530359" />
+    <state x="781" y="167" key="SettingsEditor/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601628216399" />
     <state width="871" height="709" key="SwitcherDM" timestamp="1600721519680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="871" height="709" key="SwitcherDM/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1600721519680" />
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1599637250803">
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1601636210226">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1599637250803" />
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601636210226" />
     <state x="594" y="19" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601153712134">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -567,28 +354,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="685" y="238" width="1190" height="924" key="find.popup/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601203971128" />
-    <state x="689" y="-2" width="1177" height="1976" key="search.everywhere.popup" timestamp="1601120756533">
+    <state x="689" y="-2" width="1177" height="1976" key="search.everywhere.popup" timestamp="1601496870123">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="689" y="-2" width="1177" height="1976" key="search.everywhere.popup/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601120756533" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs</url>
-          <line>141</line>
-          <properties documentPath="C:\Users\julie\Dev\Unity\Swindler\Assets\Scripts\Game\GameManager.cs" initialLine="141">
-            <startOffsets>
-              <option value="3585" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3586" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="689" y="-2" width="1177" height="1976" key="search.everywhere.popup/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601496870123" />
   </component>
 </project>

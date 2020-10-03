@@ -45,14 +45,21 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="API" t="Include">
+            <e p="ConfigAPI.cs" t="Include" />
+            <e p="IslandAPI.cs" t="Include" />
+          </e>
           <e p="Game" t="Include">
+            <e p="Config.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="Health" t="Include">
               <e p="Health.cs" t="Include" />
               <e p="HealthBar.cs" t="Include" />
               <e p="HealthBarController.cs" t="Include" />
             </e>
+            <e p="PlayLoadingManager.cs" t="Include" />
             <e p="Structures" t="Include">
+              <e p="Item.cs" t="Include" />
               <e p="Tiles" t="Include">
                 <e p="InteractableTile.cs" t="Include" />
                 <e p="ResourceTIle.cs" t="Include" />
@@ -86,7 +93,7 @@
               <e p="Inventory" t="Include">
                 <e p="InventoryManager.cs" t="Include" />
                 <e p="InventoryUI.cs" t="Include" />
-                <e p="Item.cs" t="Include" />
+                <e p="ItemStack.cs" t="Include" />
                 <e p="ItemType.cs" t="Include" />
               </e>
               <e p="Movement" t="Include">
@@ -115,11 +122,8 @@
             <e p="WeightedRandomBag.cs" t="Include" />
           </e>
           <e p="World" t="Include">
-            <e p="API" t="Include">
-              <e p="Island.cs" t="Include" />
-              <e p="IslandAPI.cs" t="Include" />
-            </e>
             <e p="Renderers" t="Include">
+              <e p="Island.cs" t="Include" />
               <e p="IslandRenderer.cs" t="Include" />
               <e p="WaterRenderer.cs" t="Include" />
             </e>

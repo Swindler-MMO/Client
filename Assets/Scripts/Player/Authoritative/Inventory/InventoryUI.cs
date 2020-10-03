@@ -21,7 +21,7 @@ namespace Swindler.Player.Authoritative.Inventory
 		public void RefreshUI()
 		{
 			string content = "";
-			foreach (Item item in inv.Items)
+			foreach (ItemStack item in inv.Items)
 			{
 				content += $" - {item.Name} x{item.Amount}\n";
 			}

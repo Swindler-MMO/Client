@@ -2,7 +2,9 @@
 using Swindler.Utilities;
 using System.Collections.Generic;
 using System.Linq;
+using Swindler.API;
 using Swindler.Game;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -114,6 +116,7 @@ namespace  Swindler.World
 
 		public void RemoveResourceNode(Vector2Int position)
 		{
+			position.Log("Removing node");
 			Tilemap props = tilemaps["props"];
 			Vector3Int basePos = new Vector3Int(position.x, position.y, 0);
 			props.SetTile(basePos, null);

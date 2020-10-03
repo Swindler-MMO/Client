@@ -1,5 +1,7 @@
-﻿using Swindler.Game.Structures.Tiles;
+﻿using Swindler.Game;
+using Swindler.Game.Structures.Tiles;
 using Swindler.Utilities;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -7,9 +9,8 @@ namespace Player.Authoritative
 {
 	public class InteractionsManager : MonoBehaviour
 	{
+		private static float INTERACT_RATE;
 
-		private const float INTERACT_RATE = .5f;
-		
 		[Header("Tilemaps and tiles")]
 		public Tilemap interactionMap;
 		public AnimatedTile highlightTile;
@@ -24,6 +25,8 @@ namespace Player.Authoritative
 
 		private void Awake()
 		{
+			//This is a weird bug, config is loaded but when defined directly after declaration value is at 0
+			INTERACT_RATE = Config.InteractCooldown;
 			nextInteraction = Time.time;
 		}
 

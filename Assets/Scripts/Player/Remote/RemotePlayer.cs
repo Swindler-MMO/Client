@@ -1,5 +1,6 @@
 ﻿using Swindler.Multiplayer;
 using Swindler.Utilities.Extensions;
+using TMPro;
 using UnityEngine;
 
 namespace Player.Remote
@@ -7,6 +8,8 @@ namespace Player.Remote
 	public class RemotePlayer : MonoBehaviour
 	{
 
+		[SerializeField] private TMP_Text usernameText;
+		
 		public int id;
 		public string playerName;
 
@@ -19,6 +22,9 @@ namespace Player.Remote
 
 			name = $"Remote Player #{pl.Id} ({pl.Name})";
 			transform.position = pl.Position;
+
+			"Setting username".Log();
+			usernameText.text = playerName;
 		}
 
 		public void SetPosition(Vector2 position)

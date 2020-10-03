@@ -11,38 +11,37 @@ namespace Swindler.Player.Authoritative.Inventory
 
 		public event EventHandler onInventoryChanged;
 
-		public List<Item> Items { get; }
+		public List<ItemStack> Items { get; }
 
 		public InventoryManager()
 		{
-			Items = new List<Item>();
+			Items = new List<ItemStack>();
 		}
 
-		public void Add(Item newItem)
+		public void Add(ItemStack newItemStack)
 		{
-			if(!newItem.IsStackable)
-				Items.Add(newItem);
+			if(!newItemStack.IsStackable)
+				Items.Add(newItemStack);
 
 			bool wasAdded = false;
-			foreach (Item item in Items)
+			foreach (ItemStack item in Items)
 			{
-				if(item.Id != newItem.Id || !item.IsStackable)
+				if(item.Id != newItemStack.Id || !item.IsStackable)
 					continue;
 
 				if(item.StackSize == item.Amount)
 					continue;
 
-				if (item.Amount + newItem.Amount <= item.StackSize)
+				if (item.Amount + newItemStack.Amount <= item.StackSize)
 				{
-					item.Amount += newItem.Amount;
+					item.Amount += newItemStack.Amount;
 					wasAdded = true;
 					break;
 				}
 
 				//Add the remaining to a new stack
-				int exceeding = Mathf.Abs(item.StackSize - (item.Amount + newItem.Amount));
-				$"StackSize ({item.StackSize}), item.Amount ({item.Amount}), newItem.Amount ({newItem.Amount})".Log();
-				Items.Add(new Item(item.Id, (ushort) exceeding));
+				int exceeding = Mathf.Abs(item.StackSize - (item.Amount + newItemStack.Amount));
+				Items.Add(new ItemStack(item.Id, (ushort) exceeding));
 				
 				//Complete the stack
 				item.Amount = item.StackSize;
@@ -52,7 +51,7 @@ namespace Swindler.Player.Authoritative.Inventory
 			}
 			
 			if(!wasAdded)
-				Items.Add(newItem);
+				Items.Add(newItemStack);
 			
 			NotifyChange();
 		}

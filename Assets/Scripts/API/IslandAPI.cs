@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Swindler.World.Renderers;
 using UnityEngine;
 
-namespace Swindler.World
+namespace Swindler.API
 {
 	public static class IslandAPI
 	{

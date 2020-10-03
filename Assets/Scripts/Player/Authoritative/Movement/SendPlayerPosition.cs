@@ -9,8 +9,8 @@ namespace Swindler.Player.Authoritative.Movement
 {
 	public class SendPlayerPosition : MonoBehaviour
 	{
-		private const float SEND_THRESHOLD = 0.0001f;
-		private const float UPDATE_TIME = 0.1f; // send update every 16ms
+		private const float MOVE_THRESHOLD = 0.0001f;
+		private static readonly float UPDATE_TIME = Config.MovementUpdateTime;
 
 		private Vector3 lastPosition;
 		private float lastUpdate;
@@ -40,7 +40,7 @@ namespace Swindler.Player.Authoritative.Movement
 
 		private bool CanSend()
 		{
-			return (lastPosition - transform.position).sqrMagnitude > SEND_THRESHOLD && lastUpdate >= UPDATE_TIME;
+			return (lastPosition - transform.position).sqrMagnitude > MOVE_THRESHOLD && lastUpdate >= UPDATE_TIME;
 		}
 	}
 }

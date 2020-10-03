@@ -34,16 +34,16 @@ namespace Swindler.Game
 		
 		private void RemoveHealthBar(Health h)
 		{
-			$"Got removal request of {h.transform.position}".Log();
-			if (!healthBars.ContainsKey(h.transform.position))
+			Vector3 pos = h.transform.position;
+			if (!healthBars.ContainsKey(pos))
 				return;
 
-			HealthBar bar = healthBars[h.transform.position];
+			HealthBar bar = healthBars[pos];
 			if(bar == null)
 				return;
 
-			Destroy(healthBars[h.transform.position].gameObject);
-			healthBars.Remove(h.transform.position);
+			Destroy(healthBars[pos].gameObject);
+			healthBars.Remove(pos);
 
 		}
 
@@ -54,7 +54,7 @@ namespace Swindler.Game
 		
 		public HealthBar GetHealthBar(Vector3 pos)
 		{
-			return healthBars[pos];
+			return !healthBars.ContainsKey(pos) ? null : healthBars[pos];
 		}
 	}
 }

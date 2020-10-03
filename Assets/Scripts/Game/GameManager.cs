@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Multiplayer.Packets.Server;
 using Player.Authoritative;
 using Player.Remote;
+using Swindler.API;
 using Swindler.Multiplayer;
 using Swindler.Player.Authoritative.Inventory;
 using Swindler.Player.Authoritative.Movement;
@@ -10,6 +11,7 @@ using Swindler.Utilities;
 using Swindler.Utilities.Extensions;
 using Swindler.World;
 using Swindler.World.Renderers;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -21,12 +23,15 @@ namespace Swindler.Game
 	{
 		public static GameManager Instance { get; private set; }
 		public static GameServer Server { get; private set; }
-		public static InventoryManager InventoryManager { get; private set; }
+		private static InventoryManager InventoryManager { get; set; }
+		
+		public static WorldManager WorldManager {get; private set; }
 		
 		[Header("Prefabs")] public GameObject authoritativePlayer;
 		public GameObject remotePlayer;
 		public GameObject inventoryPanel;
 		public Text invText;
+		public TMP_Text ping;
 
 		[Header("Player prefab objects")] public Tilemap island;
 		public WorldManager worldManager;
@@ -46,11 +51,15 @@ namespace Swindler.Game
 			Server = CreateGameServer();
 			Instance = this;
 			InventoryManager = new InventoryManager();
+			WorldManager = worldManager;
 			remotePlayers = new Dictionary<int, RemotePlayer>();
 		}
 
-		private void Start()
+		private async void Start()
 		{
+			if (!ConfigAPI.IsLoaded)
+				await ConfigAPI.Load();
+			
 			Server.Connect();
 			inventoryPanel.SetActive(inventoryOpen);
 		}
@@ -140,9 +149,8 @@ namespace Swindler.Game
 
 		public void HandleResourceMined(ResourceMinedPacket p)
 		{
-			$"Server gave item {p.ItemId} x{p.Amount}".Log();
-			worldManager.RemoveResourceNode(p.Position);
-			InventoryManager.Add(new Item(p.ItemId, p.Amount));
+			$"Server gave {p.ItemStack}".Log();
+			InventoryManager.Add(p.ItemStack);
 		}
 
 		public void HandleResourceRespawned(ResourceRespawnedPacket p)
@@ -191,6 +199,11 @@ namespace Swindler.Game
 		public void ClearInventory()
 		{
 			InventoryManager.Clear();
+		}
+
+		public void DisplayPing(int latency)
+		{
+			ping.text = "Ping: " + latency + "ms";
 		}
 	}
 }

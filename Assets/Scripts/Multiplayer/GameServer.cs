@@ -90,6 +90,7 @@ namespace Swindler.Multiplayer
     
         public void OnNetworkLatencyUpdate(NetPeer peer, int latency)
         {
+            GameManager.Instance.DisplayPing(latency);
         }
     
         public void OnConnectionRequest(ConnectionRequest request)
