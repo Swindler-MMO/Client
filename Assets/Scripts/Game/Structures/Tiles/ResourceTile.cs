@@ -27,6 +27,7 @@ namespace Swindler.Game.Structures.Tiles
 		{
 			return IsTopTile(position, map);
 		}
+
 		public bool IsTopTile(Vector3Int position, Tilemap map)
 		{
 			return map.GetTile(new Vector3Int(position.x, position.y - 1, position.z)) == null;
@@ -35,7 +36,7 @@ namespace Swindler.Game.Structures.Tiles
 		private void AddHealthBar(Vector3Int vector3Int, Tilemap tilemap)
 		{
 			Vector3 barPos = tilemap.GetCellCenterWorld(vector3Int);
-			
+
 			HealthBarController controller = HealthBarController.Instance;
 
 			if (controller.ExistHealthBar(barPos))
@@ -44,11 +45,8 @@ namespace Swindler.Game.Structures.Tiles
 				return;
 			}
 
-			GameObject o = new GameObject($"Health {vector3Int}");
-			Health h = o.AddComponent<Health>();
-			h.SetMaxHealth(9f);
-			h.ModifyHealth(-1);
-			o.transform.position = barPos;
+			new GameObject($"Health {vector3Int}")
+				.AddHealh(9f, barPos, true);
 		}
 	}
 }

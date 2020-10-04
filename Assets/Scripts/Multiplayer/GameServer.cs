@@ -23,7 +23,6 @@ namespace Swindler.Multiplayer
         private NetManager manager;
         private NetPeer server;
         
-        // Start is called before the first frame update
         private void Awake()
         {
             manager = new NetManager(this);

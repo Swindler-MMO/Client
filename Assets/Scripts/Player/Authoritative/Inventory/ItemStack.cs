@@ -27,7 +27,7 @@ namespace Swindler.Player.Authoritative.Inventory
 
 		public override string ToString()
 		{
-			return $"{{ItemStack: {Name} ({Id}) x{Amount} }}";
+			return $"{{ItemStack: {Name} ({Id}) x{Amount}}}";
 		}
 	}
 }

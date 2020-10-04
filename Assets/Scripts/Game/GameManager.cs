@@ -55,11 +55,8 @@ namespace Swindler.Game
 			remotePlayers = new Dictionary<int, RemotePlayer>();
 		}
 
-		private async void Start()
+		private void Start()
 		{
-			if (!ConfigAPI.IsLoaded)
-				await ConfigAPI.Load();
-			
 			Server.Connect();
 			inventoryPanel.SetActive(inventoryOpen);
 		}

@@ -20,42 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayLoading.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayLoading.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/API.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Config.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Config.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayLoadingManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/DefaultSceneLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/GameObjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/GameObjectExtensions.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Authoritaive Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Remote Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Remote Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceMinedPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceMinedPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/InteractionsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemStack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemStack.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Movement/SendPlayerPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/LogExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/LogExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/Island.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/Island.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/Island.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/IslandAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/IslandAPI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/API/IslandAPI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/IslandAPI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/IslandRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/Renderers/IslandRenderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +45,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/1a/c746a8e8/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/3b/36e9e415/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/DefaultSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/a4/8674902f/TileBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/ce/3bb11e54/CreateAssetMenuAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/ae/4a054f66/GridLayout.cs" root0="SKIP_HIGHLIGHTING" />
@@ -85,8 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/IconMap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemType.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ItemEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/RPG and MMO UI 5/Scripts/UI/Controls/Select Field/UISelectField_Option.cs" />
@@ -113,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/InteractableTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/API/IslandAPI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/API/GameConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/InventoryManager.cs" />
@@ -129,13 +101,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Authoritative/Inventory/ItemStack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Config.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/PlayLoadingManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Remote/RemotePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/InitialSetupPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Health/HealthBarController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/WorldManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/GameObjectExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Structures/Tiles/ResourceTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/DefaultSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" />
       </list>
     </option>
   </component>
@@ -217,7 +192,8 @@
       <workItem from="1601482589811" duration="5514000" />
       <workItem from="1601540662987" duration="2732000" />
       <workItem from="1601627881126" duration="7710000" />
-      <workItem from="1601712882255" duration="3350000" />
+      <workItem from="1601712882255" duration="3351000" />
+      <workItem from="1601796002594" duration="2315000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
