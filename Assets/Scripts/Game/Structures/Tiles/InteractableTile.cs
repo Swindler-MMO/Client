@@ -6,7 +6,6 @@ using UnityEngine.Tilemaps;
 
 namespace Swindler.Game.Structures.Tiles
 {
-	[CreateAssetMenu]
 	public abstract class InteractableTile : RuleTile<InteractableTile.Neighbor> {
 		
 		public class Neighbor : RuleTile.TilingRule.Neighbor {

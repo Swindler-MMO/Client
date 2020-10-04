@@ -5,6 +5,7 @@ using System.Linq;
 using Swindler.API;
 using Swindler.Game;
 using Swindler.Utilities.Extensions;
+using Swindler.World.Renderers;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -91,12 +92,8 @@ namespace  Swindler.World
 		private void CreateIslandRenderer(int x, int y)
 		{
 			GameObject go = new GameObject($"Island-{x}-{y}");
-			var islandRenderer = go.AddComponent<Renderers.IslandRenderer>();
-			
 			loadedIslands.Add(new Vector2Int(x, y), go);
-			
-			islandRenderer.SetRenderData(tiles, tilemaps, square, treeTile, rockTile);
-			islandRenderer.SetIsland(x, y);
+			go.AddIslandRenderer(tiles, tilemaps, treeTile, rockTile, x, y);
 		}
 
 		private void OnDestroy()
