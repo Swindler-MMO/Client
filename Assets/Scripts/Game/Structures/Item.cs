@@ -1,6 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Swindler.Player.Authoritative.Inventory;
-using Swindler.Utilities.Extensions;
 
 namespace Swindler.Game.Structures
 {
