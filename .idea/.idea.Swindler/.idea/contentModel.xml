@@ -300,6 +300,12 @@
         </e>
         <e p="Editor" t="Include">
           <e p="DefaultSceneLoader.cs" t="Include" />
+          <e p="Windows" t="Include">
+            <e p="Configuration.cs" t="Include" />
+            <e p="ConfigurationsEditor.cs" t="Include" />
+            <e p="DrawSelected.cs" t="Include" />
+            <e p="GameManagerEditor.cs" t="Include" />
+          </e>
         </e>
         <e p="Libs" t="Include">
           <e p="Json.NET" t="Include">

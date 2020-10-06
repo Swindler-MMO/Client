@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using Swindler.Utilities.Extensions;
 
 namespace Swindler.Utilities
 {
@@ -20,6 +21,7 @@ namespace Swindler.Utilities
 
 		public static Task<T> Post<T>(string url, object body)
 		{
+			JsonConvert.SerializeObject(body).Log();
 			return Request<T>(HttpMethod.Post, url, new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8, "application/json"));
 		}
 
@@ -48,6 +50,10 @@ namespace Swindler.Utilities
 				//TODO: Use cancellation token ?
 				using (var response = await client.SendAsync(request))
 				{
+					url.Log();
+					(await response.Content.ReadAsStringAsync()).Log();
+					//return default;
+					
 					return DeserializeJsonFromStream<T>(await response.Content.ReadAsStreamAsync());
 				}
 			}
