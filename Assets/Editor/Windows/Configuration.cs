@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Sirenix.OdinInspector;
 using Swindler.Json.Utils;
 using Swindler.Utilities;
+using Swindler.Utilities.Extensions;
 using UnityEngine;
 
 namespace Swindler.Editor.Windows
@@ -87,7 +88,9 @@ namespace Swindler.Editor.Windows
 		[GUIColor(1f, 0.7f, 0.7f)]
 		public async void Delete()
 		{
+			"Deleting config".Log();
 			var r = await HttpUtils.Delete<DeleteConfigurationView>(HOST + $"/{name}?env={environment.ToApiName()}");
+			"Deleted".Log();
 			_cfgEditor.LoadAllConfiguration();
 		}
 		

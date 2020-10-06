@@ -32,7 +32,6 @@ namespace Swindler.Editor.Windows
 		{
 			if (_treeRebuild && Event.current.type == EventType.Layout)
 			{
-				"Rebuilding tree".Log();
 				ForceMenuTreeRebuild();
 				_treeRebuild = false;
 			}
@@ -46,8 +45,6 @@ namespace Swindler.Editor.Windows
 		{
 			OdinMenuTree tree = new OdinMenuTree();
 
-			"Building tree".Log();
-
 			tree.Add("Create new", new AddNewConfiguration(this));
 
 			AddConfigsMenu(tree);
@@ -58,9 +55,13 @@ namespace Swindler.Editor.Windows
 		private void AddConfigsMenu(OdinMenuTree tree)
 		{
 			foreach (var cfg in _configs)
+			{
+				Environments env = EnvironmentsExtensions.FromApiName(cfg.Key);
 				foreach (string cfgName in cfg.Value)
-					tree.AddMenuItemAtPath(cfg.Key,
-						new OdinMenuItem(tree, cfgName, new ConfigurationEditor(EnvironmentsExtensions.FromApiName(cfg.Key), cfgName, this)));
+					tree.AddMenuItemAtPath(env.ToString(),
+						new OdinMenuItem(tree, cfgName, new ConfigurationEditor(env, cfgName, this)));
+			}
+			
 		}
 
 		public async void LoadAllConfiguration()

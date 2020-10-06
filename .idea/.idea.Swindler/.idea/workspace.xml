@@ -20,22 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Configurations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Configurations/Test CFG 1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Configurations/Test CFG 1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/DrawSelected.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/DrawSelected.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/GameManagerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/GameManagerEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/JsonConverterExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/JsonConverterExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,11 +102,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Configurations.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/Windows/GameManagerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/Windows/DrawSelected.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/JsonConverterExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" />
       </list>
     </option>
   </component>
@@ -204,7 +192,7 @@
       <workItem from="1601796002594" duration="4123000" />
       <workItem from="1601800880843" duration="1180000" />
       <workItem from="1601802624009" duration="2530000" />
-      <workItem from="1601997871781" duration="12341000" />
+      <workItem from="1601997871781" duration="14331000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
