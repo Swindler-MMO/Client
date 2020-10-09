@@ -13,7 +13,6 @@ namespace Swindler.Editor.Windows
 {
 	public class ConfigurationsEditor : OdinMenuEditorWindow
 	{
-
 		private bool _treeRebuild;
 		private Dictionary<string, List<string>> _configs = new Dictionary<string, List<string>>();
 
@@ -45,7 +44,7 @@ namespace Swindler.Editor.Windows
 		{
 			OdinMenuTree tree = new OdinMenuTree();
 
-			tree.Add("Create new", new AddNewConfiguration(this));
+			//tree.Add("Create new", new AddNewConfiguration(this));
 
 			AddConfigsMenu(tree);
 
@@ -58,10 +57,13 @@ namespace Swindler.Editor.Windows
 			{
 				Environments env = EnvironmentsExtensions.FromApiName(cfg.Key);
 				foreach (string cfgName in cfg.Value)
-					tree.AddMenuItemAtPath(env.ToString(),
-						new OdinMenuItem(tree, cfgName, new ConfigurationEditor(env, cfgName, this)));
+					tree.AddMenuItemAtPath(
+						env.ToString(),
+						new OdinMenuItem(
+							tree,
+							cfgName,
+							new ConfigurationEditor(env, ConfigurationsNamesExtensions.FromApiName(cfgName), this)));
 			}
-			
 		}
 
 		public async void LoadAllConfiguration()
@@ -73,34 +75,34 @@ namespace Swindler.Editor.Windows
 
 	public class ConfigurationEditor
 	{
-
 		[InlineEditor(ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-		public Configuration cfg;
-		
-		private string _name;
-		private Environments _env;
-		
-		public ConfigurationEditor(Environments env, string name, ConfigurationsEditor cfgEditor)
+		public ScriptableObject cfg;
+
+		public ConfigurationEditor(Environments env, ConfigurationsNames name, ConfigurationsEditor cfgEditor)
 		{
-
-			_name = name;
-			_env = env;
-
-			cfg = ScriptableObject.CreateInstance<Configuration>();
-			cfg.SetConfig(cfgEditor, env, name);
+			switch (name)
+			{
+				case ConfigurationsNames.Server:
+					cfg = ScriptableObject.CreateInstance<ServerConfigurationEditor>();
+					((ServerConfigurationEditor) cfg).SetConfig(cfgEditor, env, name);
+					break;
+				case ConfigurationsNames.Client:
+					cfg = ScriptableObject.CreateInstance<ClientConfigurationEditor>();
+					((ClientConfigurationEditor) cfg).SetConfig(cfgEditor, env, name);
+					break;
+			}
 		}
 	}
-	
+
 	public class AddNewConfiguration
 	{
 		[InlineEditor(ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-		public Configuration cfg;
+		public ServerConfigurationEditor cfg;
 
 		public AddNewConfiguration(ConfigurationsEditor cfgEditor)
 		{
-			cfg = ScriptableObject.CreateInstance<Configuration>();
+			cfg = ScriptableObject.CreateInstance<ServerConfigurationEditor>();
 			cfg.SetCreate(cfgEditor);
 		}
 	}
-
 }

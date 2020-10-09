@@ -301,8 +301,12 @@
         <e p="Editor" t="Include">
           <e p="DefaultSceneLoader.cs" t="Include" />
           <e p="Windows" t="Include">
-            <e p="Configuration.cs" t="Include" />
-            <e p="ConfigurationsEditor.cs" t="Include" />
+            <e p="Configuration" t="Include">
+              <e p="ClientConfigurationEditor.cs" t="Include" />
+              <e p="ConfigurationsEditor.cs" t="Include" />
+              <e p="Environments.cs" t="Include" />
+              <e p="ServerConfigurationEditor.cs" t="Include" />
+            </e>
             <e p="DrawSelected.cs" t="Include" />
             <e p="GameManagerEditor.cs" t="Include" />
           </e>

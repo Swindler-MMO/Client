@@ -20,10 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4582d42-e729-4f6d-9e71-e1f7b2a5d424" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ClientConfigurationEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ClientConfigurationEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/Environments.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/Environments.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ServerConfigurationEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ServerResource.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ServerResource.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swindler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configurations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configurations/Test CFG 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configurations/Test CFG 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ServerConfigurationEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ConfigurationsEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ConfigurationsEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +59,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/ae/4a054f66/GridLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/PlayLoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5DE66FF1-1FCB-4513-8463-255B392B032B/12/8039eb28/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6446C53E-8BBA-4FC3-BEAE-7303E913D967/d2/d98e9899/TableListAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/c6/582ec6f1/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a5/9f04e405/Vector3Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/0f/69c624f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
@@ -56,13 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/LogExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/NetDataReaderExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/NetDataWriterExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/ResourceRespawnedPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerJoinedPacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Player/PlayerInteractResourcePacket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Player/PlayerPositionPacket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/NetDataReaderExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/GameSnapshot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/Packets/Server/PlayerLeftPacket.cs" />
@@ -103,10 +111,17 @@
         <option value="$PROJECT_DIR$/Assets/Editor/Windows/GameManagerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/Windows/DrawSelected.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Extensions/JsonConverterExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/Windows/ConfigurationsEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/API/ConfigAPI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/ServerConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ServerConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ClientConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/HttpUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/Environments.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ServerConfigurationEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ConfigurationsEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Windows/Configuration/ClientConfigurationEditor.cs" />
       </list>
     </option>
   </component>
@@ -193,6 +208,8 @@
       <workItem from="1601800880843" duration="1180000" />
       <workItem from="1601802624009" duration="2530000" />
       <workItem from="1601997871781" duration="14331000" />
+      <workItem from="1602060202014" duration="8023000" />
+      <workItem from="1602259363002" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary="Waaayyyyyy to many changes, but it works !">
       <created>1600030087299</created>
@@ -321,10 +338,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601636210226" />
-    <state x="594" y="19" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601153712134">
+    <state x="594" y="19" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602060833892">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="594" y="19" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1601153712134" />
+    <state x="594" y="19" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/2560.358.1920.1040@0.0.2560.1400" timestamp="1602060833892" />
     <state x="685" y="238" width="1190" height="924" key="find.popup" timestamp="1601203971128">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
