@@ -42,7 +42,7 @@ namespace Swindler.Json.Utils.Extensions
 			currentSettings.Converters.Add(new JsonVector2Converter());
 			currentSettings.Converters.Add(new IslandLayerConverter());
 			currentSettings.Converters.Add(new JsonVector2IntConverter());
-			//currentSettings.Converters.Add(new JsonQuaternionConverter());
+			currentSettings.Converters.Add(new JsonConverterObjectToString());
 
 			JsonConvert.DefaultSettings = () => currentSettings;
 
@@ -125,6 +125,29 @@ namespace Swindler.Json.Utils
 		public override bool CanWrite => true;
 
 		public override bool CanRead => false;
+	}
+	
+	public class JsonConverterObjectToString : JsonConverter
+	{
+		public override bool CanConvert(Type objectType)
+		{
+			return (objectType == typeof(JTokenType));
+		}
+
+		public override bool CanRead => true;
+		public override bool CanWrite => false;
+
+		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+		{
+			throw new NotImplementedException();
+		}
+
+		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+		{
+			JToken token = JToken.Load(reader);
+			return token.Type == JTokenType.Object ? token.ToString() : null;
+		}
+		
 	}
 	
 }

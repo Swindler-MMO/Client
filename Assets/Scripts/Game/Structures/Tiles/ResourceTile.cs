@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 
 namespace Swindler.Game.Structures.Tiles
 {
-	[CreateAssetMenu(fileName = "Resource Name", menuName = "Swindler/Tiles/Resource")]
+	[CreateAssetMenu(fileName = "Resource Name", menuName = "Swindler/Resource Tile")]
 	public class ResourceTile : InteractableTile
 	{
 		public string resourceName;

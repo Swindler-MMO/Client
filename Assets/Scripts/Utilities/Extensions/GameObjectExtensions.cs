@@ -1,5 +1,7 @@
 ﻿using Swindler.Game;
+using Swindler.World.Renderers;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace Swindler.Utilities.Extensions
 {
@@ -17,6 +19,14 @@ namespace Swindler.Utilities.Extensions
 			o.transform.position = pos;
 
 			return h;
+		}
+
+		public static IslandRenderer AddIslandRenderer(this GameObject o, TileBase[] tiles, SerializableStringTilemap tilemaps, TileBase treeTile, TileBase rockTile, int x, int y)
+		{
+			IslandRenderer islandRenderer = o.AddComponent<IslandRenderer>();
+			islandRenderer.SetRenderData(tiles, tilemaps, treeTile, rockTile);
+			islandRenderer.SetIsland(x, y);
+			return islandRenderer;
 		}
 		
 	}

@@ -1,11 +1,14 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using Swindler.Utilities.Extensions;
 
 namespace Swindler.Utilities
 {
@@ -48,6 +51,12 @@ namespace Swindler.Utilities
 				//TODO: Use cancellation token ?
 				using (var response = await client.SendAsync(request))
 				{
+
+					if (response.StatusCode == HttpStatusCode.InternalServerError)
+						throw new HttpUtilsError(response.StatusCode, await response.Content.ReadAsStringAsync());
+
+					//(await response.Content.ReadAsStringAsync()).Log();
+					
 					return DeserializeJsonFromStream<T>(await response.Content.ReadAsStreamAsync());
 				}
 			}
@@ -65,6 +74,18 @@ namespace Swindler.Utilities
 			}
 		}
 
+	}
+
+	public class HttpUtilsError : Exception
+	{
+		public HttpStatusCode Code { get; }
+		public new string Message { get; }
+		
+		public HttpUtilsError(HttpStatusCode code, string message)
+		{
+			Code = code;
+			Message = JsonConvert.DeserializeObject<Dictionary<string, object>>(message)["message"].ToString();
+		}
 	}
 
 }

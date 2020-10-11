@@ -14,7 +14,6 @@ namespace Swindler.World.Renderers
 		
 		[Header("Tilemaps and tiles")]
 		public TileBase[] tiles;
-		public TileBase square;
 		public SerializableStringTilemap tilemaps;
 		public TileBase treeTile;
 		public TileBase rockTile;
@@ -25,18 +24,17 @@ namespace Swindler.World.Renderers
 		private int height;
 		private string[] layers;
 
-		public void SetRenderData(TileBase[] tiles, SerializableStringTilemap tilemaps, TileBase square, TileBase treeTile, TileBase rockTile)
+		public void SetRenderData(TileBase[] tiles, SerializableStringTilemap tilemaps, TileBase treeTile, TileBase rockTile)
 		{
 			this.tiles = tiles;
 			this.tilemaps = tilemaps;
-			this.square = square;
 			this.treeTile = treeTile;
 			this.rockTile = rockTile;
 		}
 
 		public async void SetIsland(int x, int y)
 		{
-			var island = await IslandAPI.LoadIsland(x, y);
+			Island island = await IslandAPI.LoadIsland(x, y);
 			
 			this.x = x;
 			this.y = y;
@@ -55,8 +53,8 @@ namespace Swindler.World.Renderers
 			if (tiles == null || tilemaps == null)
 				throw new Exception("Tilemaps or tiles not assigned, use SetRenderData before calling SetIsland");
 			
-			TileBase[] tilesArray = new TileBase[width * height];
-			Vector3Int[] positions = new Vector3Int[width * height];
+			var tilesArray = new TileBase[width * height];
+			var positions = new Vector3Int[width * height];
 			
 			foreach (IslandLayer layer in island.Layers)
 			{
@@ -104,40 +102,6 @@ namespace Swindler.World.Renderers
 				map.SetTiles(positions, tilesArray);
 			}
 
-		}
-
-		private void GenerateColliders(Island island, int islandX, int islandY)
-		{
-
-			var layer = island.Layers.Find(l => l.Name == "island");
-			Tilemap map = tilemaps["props"];
-			for (int x = 0; x < island.Width; x++)
-				for (int y = 0; y < island.Height; y++)
-					if (IsShoreTile(x, y, island.Width, layer.Data))
-					{
-						map.SetTile(new Vector3Int(islandX + x, islandY + y, 0), square);
-					}
-
-		}
-
-		private bool IsShoreTile(int mapX, int mapY, int width, int[] data)
-		{
-			//Check only water tile
-			if (data[mapY * width + mapX] != 0)
-				return false;
-
-			for (int x = mapX - 1; x < mapX + 1; x++)
-				for (int y = mapY - 1; x < mapY + 1; y++)
-				{
-					int index = y * width + x;
-					if (index < 0 || index >= data.Length)
-						continue;
-
-					if (data[index] > 0)
-						return true;
-				}
-
-			return false;
 		}
 
 		private void OnDestroy()
